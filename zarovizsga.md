@@ -213,11 +213,11 @@ $$P(4 \leq X \leq 5) = \frac{1}{5}$$
    ![suruseg](/kepek/egyenletessur.png)
    - **Eloszlásfüggvény**:
 
-     ![eloszlasfuggveny](/kepek/egyenleteseloszfv.png)
+     $$F(t) = \begin{cases} 0 & \text{ha } t\leq a \\ \frac{t-a}{b-a} & \text{ha } a \lt t \leq b \\ 1 & \text{ha } b \lt t \end{cases}$$
 
    - **Sűrűségfüggvény**:
 
-     ![eloszlasfuggveny](/kepek/egyenletessurusegfv.png)
+     $$F(t) = \begin{cases} \frac{1}{b-a} & \text{ha } t\in [a,b] \\ 0 & \text{ha } t\notin [a,b]\end{cases}$$
 
    - **Várható érték**:  
      $$EX = \int_a^b \frac{x}{b-a} = \left[\frac{x^2}{2\cdot(b-a)}\right]_a^b = \frac{b^2-a^2}{2\cdot(b-a)} = \frac{(b-a)\cdot(b+a)}{2\cdot(b-a)} = \frac{a+b}{2}$$
@@ -256,9 +256,9 @@ $$P(4 \leq X \leq 5) = \frac{1}{5}$$
    - **Jelentése:** A Poisson-eloszlás folytonos "párja". Arra ad választ, hogy mennyi idő telik el két egymást követő esemény között (pl. mennyi idő múlva érkezik a következő hívás a telefonközpontba, vagy mennyi ideig működik hibátlanul egy alkatrész).
    - **Például:** tegyük fel, hogy egy ügyfélszolgálaton átlagosan $\lambda = 2$ hívás érkezik óránként. Mivel a hívások teljesen véletlenszerűen és egymástól függetlenül futnak be, a két hívás között eltelt idő exponenciális eloszlást követ. A várható értékből kiszámítható, hogy $\frac{1}{\lambda} = \frac{1}{2}$ óra, vagyis átlagosan 30 percet kell várni két hívás között.
    - **Sűrűségfüggvénye:**
-     ![suruseg](kepek/expsuregy.png)
+     $$f(x) = \begin{cases} \lambda e^{-\lambda x}, & \text{ha } x \ge 0 \\ 0, & \text{ha } x < 0 \end{cases}$$
    - **Eloszlásfüggvénye:**
-     ![eloszlas](kepek/expelegy.png)
+     $$F(x) = \begin{cases} 1 - e^{-\lambda x}, & \text{ha } x \ge 0 \\ 0, & \text{ha } x < 0 \end{cases}$$
    - **Várható értéke:** $EX = \frac{1}{\lambda}$
    - **Szórásnégyzete:** $\text{Var}(X) = \frac{1}{\lambda^2}$
    - **Örökifjú tulajdonság (emlékezetnélküliség):**
