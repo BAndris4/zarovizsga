@@ -251,8 +251,8 @@ $$P(4 \leq X \leq 5) = \frac{1}{5}$$
 
 3. **Exponenciális eloszlás**
    - $X \sim Exp(\lambda)$
-     ![eloszlas](expeloszfv.png)
-     ![eloszlas](expsur.png)
+     ![eloszlas](kepek/expeloszfv.png)
+     ![suruseg](kepek/expsur.png)
    - **Jelentése:** A Poisson-eloszlás folytonos "párja". Arra ad választ, hogy mennyi idő telik el két egymást követő esemény között (pl. mennyi idő múlva érkezik a következő hívás a telefonközpontba, vagy mennyi ideig működik hibátlanul egy alkatrész).
    - **Például:** tegyük fel, hogy egy ügyfélszolgálaton átlagosan $\lambda = 2$ hívás érkezik óránként. Mivel a hívások teljesen véletlenszerűen és egymástól függetlenül futnak be, a két hívás között eltelt idő exponenciális eloszlást követ. A várható értékből kiszámítható, hogy $\frac{1}{\lambda} = \frac{1}{2}$ óra, vagyis átlagosan 30 percet kell várni két hívás között.
    - **Sűrűségfüggvénye:**
