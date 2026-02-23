@@ -2,20 +2,20 @@
 
 ## Görög betűk kiejtése
 
-| Kisbetű    | Nagybetű   | Kiejtés  | Kisbetű    | Nagybetű   | Kiejtés  |
-| ---------- | ---------- | -------- | ---------- | ---------- | -------- |
-| $\alpha$   | $\Alpha$   | Alfa     | $\nu$      | $\Nu$      | Nű       |
-| $\beta$    | $\Beta$    | Béta     | $\xi$      | $\Xi$      | Kszi     |
-| $\gamma$   | $\Gamma$   | Gamma    | $\omicron$ | $\Omicron$ | Omikron  |
-| $\delta$   | $\Delta$   | Delta    | $\pi$      | $\Pi$      | Pi       |
-| $\epsilon$ | $\Epsilon$ | Epszilon | $\rho$     | $\Rho$     | Rhó      |
-| $\zeta$    | $\Zeta$    | Zéta     | $\sigma$   | $\Sigma$   | Szigma   |
-| $\eta$     | $\Eta$     | Éta      | $\tau$     | $\Tau$     | Tau      |
-| $\theta$   | $\Theta$   | Théta    | $\upsilon$ | $\Upsilon$ | Üpszilon |
-| $\iota$    | $\Iota$    | Iota     | $\phi$     | $\Phi$     | Fí       |
-| $\kappa$   | $\Kappa$   | Kappa    | $\chi$     | $\Chi$     | Khí      |
-| $\lambda$  | $\Lambda$  | Lambda   | $\psi$     | $\Psi$     | Pszí     |
-| $\mu$      | $\Mu$      | Mű       | $\omega$   | $\Omega$   | Omega    |
+| Kisbetű    | Nagybetű  | Kiejtés  | Kisbetű    | Nagybetű   | Kiejtés  |
+| ---------- | --------- | -------- | ---------- | ---------- | -------- |
+| $\alpha$   | $A$       | Alfa     | $\nu$      | $N$        | Nű       |
+| $\beta$    | $B$       | Béta     | $\xi$      | $\Xi$      | Kszi     |
+| $\gamma$   | $\Gamma$  | Gamma    | $\omicron$ | $O$        | Omikron  |
+| $\delta$   | $\Delta$  | Delta    | $\pi$      | $\Pi$      | Pi       |
+| $\epsilon$ | $E$       | Epszilon | $\rho$     | $P$        | Rhó      |
+| $\zeta$    | $Z$       | Zéta     | $\sigma$   | $\Sigma$   | Szigma   |
+| $\eta$     | $H$       | Éta      | $\tau$     | $T$        | Tau      |
+| $\theta$   | $\Theta$  | Théta    | $\upsilon$ | $\Upsilon$ | Üpszilon |
+| $\iota$    | $I$       | Iota     | $\phi$     | $\Phi$     | Fí       |
+| $\kappa$   | $K$       | Kappa    | $\chi$     | $X$        | Khí      |
+| $\lambda$  | $\Lambda$ | Lambda   | $\psi$     | $\Psi$     | Pszí     |
+| $\mu$      | $M$       | Mű       | $\omega$   | $\Omega$   | Omega    |
 
 ## 1. tétel
 
@@ -212,9 +212,13 @@ $$P(4 \leq X \leq 5) = \frac{1}{5}$$
    ![eloszlas](/kepek/egyenletes.png)
    ![suruseg](/kepek/egyenletessur.png)
    - **Eloszlásfüggvény**:
-     $$F(t) = \begin{cases} 0 & \text{ha } t\leq a \\ \frac{t-a}{b-a} & \text{ha } a \lt t \leq b \\ 1 & \text{ha } b \lt t \end{cases}$$
-   - **Sűrűségfüggvény**:  
-     $$F(t) = \begin{cases} \frac{1}{b-a} & \text{ha } t\in [a,b] \\ 0 & \text{ha } t\notin [a,b]\end{cases}$$
+
+     ![eloszlasfuggveny](/kepek/egyenleteseloszfv.png)
+
+   - **Sűrűségfüggvény**:
+
+     ![eloszlasfuggveny](/kepek/egyenletessurusegfv.png)
+
    - **Várható érték**:  
      $$EX = \int_a^b \frac{x}{b-a} = \left[\frac{x^2}{2\cdot(b-a)}\right]_a^b = \frac{b^2-a^2}{2\cdot(b-a)} = \frac{(b-a)\cdot(b+a)}{2\cdot(b-a)} = \frac{a+b}{2}$$
    - **Második momentum:**
@@ -226,8 +230,10 @@ $$P(4 \leq X \leq 5) = \frac{1}{5}$$
 
 2. **Normális eloszlás (Gauss-eloszlás)**
    - $X \sim N(\mu, \sigma^2)$
-     ![eloszlas](norm.png)
-     ![suruseg](normsur.png)
+
+     ![eloszlas](/kepek/norm.png)
+     ![suruseg](/kepek/normsur.png)
+
    - **Jelentése és fontossága:** a legfontosabb eloszlás a valószínűségszámításban. A _centrális határeloszlás-tétel_ miatt a természetben nagyon sok dolog (pl. testmagasság, IQ, mérési hibák) normális eloszlást követ, mert ha sok független, apró véletlen hatás adódik össze, az eredményük ehhez az eloszláshoz tart.
    - **Sűrűségfüggvénye (Haranggörbe): :skull:**
      $$f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
@@ -242,6 +248,7 @@ $$P(4 \leq X \leq 5) = \frac{1}{5}$$
        $$Z = \frac{X - \mu}{\sigma}$$
      - Segítségével a valószínűségek könnyen számolhatók a $\Phi(x)$ táblázatból:
        $$P(a \le X \le b) = \Phi\left(\frac{b-\mu}{\sigma}\right) - \Phi\left(\frac{a-\mu}{\sigma}\right)$$
+
 3. **Exponenciális eloszlás**
    - $X \sim Exp(\lambda)$
      ![eloszlas](expeloszfv.png)
@@ -249,9 +256,9 @@ $$P(4 \leq X \leq 5) = \frac{1}{5}$$
    - **Jelentése:** A Poisson-eloszlás folytonos "párja". Arra ad választ, hogy mennyi idő telik el két egymást követő esemény között (pl. mennyi idő múlva érkezik a következő hívás a telefonközpontba, vagy mennyi ideig működik hibátlanul egy alkatrész).
    - **Például:** tegyük fel, hogy egy ügyfélszolgálaton átlagosan $\lambda = 2$ hívás érkezik óránként. Mivel a hívások teljesen véletlenszerűen és egymástól függetlenül futnak be, a két hívás között eltelt idő exponenciális eloszlást követ. A várható értékből kiszámítható, hogy $\frac{1}{\lambda} = \frac{1}{2}$ óra, vagyis átlagosan 30 percet kell várni két hívás között.
    - **Sűrűségfüggvénye:**
-     $$f(x) = \begin{cases} \lambda e^{-\lambda x}, & \text{ha } x \ge 0 \\ 0, & \text{ha } x < 0 \end{cases}$$
+     ![suruseg](kepek/expsuregy.png)
    - **Eloszlásfüggvénye:**
-     $$F(x) = \begin{cases} 1 - e^{-\lambda x}, & \text{ha } x \ge 0 \\ 0, & \text{ha } x < 0 \end{cases}$$
+     ![eloszlas](kepek/expelegy.png)
    - **Várható értéke:** $EX = \frac{1}{\lambda}$
    - **Szórásnégyzete:** $\text{Var}(X) = \frac{1}{\lambda^2}$
    - **Örökifjú tulajdonság (emlékezetnélküliség):**
