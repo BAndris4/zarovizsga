@@ -31,21 +31,29 @@
 
 ## Infó
 
-1. tétel [Adatbázisrendszerek. Adatbázis, adatbázisrendszer, adatbázis-kezelő rendszer (DBMS) fogalma és jellemzői. Egyed, tulajdonság és kapcsolat fogalma és tulajdonságai. Relációs, objektum-relációs és NoSQL adatbázisok jellemzése. A funkcionális függés fogalma. Koncepcionális adatbázis-tervezés, az ER modell és leképezése relációs modellre. Az SQL elemei: DDL, DML, DCL, egyszerű lekérdezések és táblák összekapcsolása](tetelek/info/01.md)
+1. tétel
+   [Adatbázisrendszerek. Adatbázis, adatbázisrendszer, adatbázis-kezelő rendszer (DBMS) fogalma és jellemzői. Egyed, tulajdonság és kapcsolat fogalma és tulajdonságai. Relációs, objektum-relációs és NoSQL adatbázisok jellemzése. A funkcionális függés fogalma. Koncepcionális adatbázis-tervezés, az ER modell és leképezése relációs modellre. Az SQL elemei: DDL, DML, DCL, egyszerű lekérdezések és táblák összekapcsolása](tetelek/info/01.md)
 
-2. tétel [Adattípusok. Változó. Műveletek, operátorok, operandusok. Vezérlési szerkezetek. Kifejezések. Utasítások. Programegységek. Paraméterkiértékelés, paraméterátadás. Blokk. Hatáskörkezelés, láthatóság. Absztrakt adattípus. Kivételkezelés.](tetelek/info/02.md)
+2. tétel
+   [Adattípusok. Változó. Műveletek, operátorok, operandusok. Vezérlési szerkezetek. Kifejezések. Utasítások. Programegységek. Paraméterkiértékelés, paraméterátadás. Blokk. Hatáskörkezelés, láthatóság. Absztrakt adattípus. Kivételkezelés.](tetelek/info/02.md)
 
-3. tétel [Az objektumorientált paradigma alapfogalmai. Osztály, objektum, példányosítás. Öröklődés, osztályhierarchia. Polimorfizmus, metódustúlterhelés. A bezárási eszközrendszer. Absztrakt osztályok és interfészek. Típustagok.](tetelek/info/03.md)
+3. tétel
+   [Az objektumorientált paradigma alapfogalmai. Osztály, objektum, példányosítás. Öröklődés, osztályhierarchia. Polimorfizmus, metódustúlterhelés. A bezárási eszközrendszer. Absztrakt osztályok és interfészek. Típustagok.](tetelek/info/03.md)
 
-4. tétel [Operációs rendszerek fogalma, felépítése, osztályozásuk. Fájlok és fájlrendszerek. Speciális fájlok Unix alatt. Átirányítás, csővezetékek. Folyamatkezelés. Jelzések, szignálok. Ütemezett végrehajtás.](tetelek/info/04.md)
+4. tétel
+   [Operációs rendszerek fogalma, felépítése, osztályozásuk. Fájlok és fájlrendszerek. Speciális fájlok Unix alatt. Átirányítás, csővezetékek. Folyamatkezelés. Jelzések, szignálok. Ütemezett végrehajtás.](tetelek/info/04.md)
 
-5. tétel [Verziókezelés, verziókezelő rendszerek. Szoftvertesztelési alapfogalmak (tesztszintek, teszttípusok, teszttervezési módszerek). Objektum orientált tervezési alapelvek (GoF, SOLID). Függőségbefecskendezés. Architekturális minták (MVC). Tervezési minták. Szabad és nem szabad szoftverek. Szoftverlicencek, szabad és nyílt forrású licencek fajtái](tetelek/info/05.md)
+5. tétel
+   [Verziókezelés, verziókezelő rendszerek. Szoftvertesztelési alapfogalmak (tesztszintek, teszttípusok, teszttervezési módszerek). Objektum orientált tervezési alapelvek (GoF, SOLID). Függőségbefecskendezés. Architekturális minták (MVC). Tervezési minták. Szabad és nem szabad szoftverek. Szoftverlicencek, szabad és nyílt forrású licencek fajtái](tetelek/info/05.md)
 
-6. tétel [Hagyományos szoftverfejlesztési módszertanok: vízesés modell, V-modell, spirális fejlesztési modell, prototípus alapú fejlesztés, iteratív és inkrementális módszertanok, gyors alkalmazásfejlesztés. Agilis szoftverfejlesztési módszertanok: az agilis szoftverfejlesztés alapjai, az agilis kiáltvány, valamint egy szabadon választott agilis módszertan részletes bemutatása.](tetelek/info/06.md)
+6. tétel
+   [Hagyományos szoftverfejlesztési módszertanok: vízesés modell, V-modell, spirális fejlesztési modell, prototípus alapú fejlesztés, iteratív és inkrementális módszertanok, gyors alkalmazásfejlesztés. Agilis szoftverfejlesztési módszertanok: az agilis szoftverfejlesztés alapjai, az agilis kiáltvány, valamint egy szabadon választott agilis módszertan részletes bemutatása.](tetelek/info/06.md)
 
-7. tétel [A web működésének alapjai. Web szabványok és szabványügyi szervezetek. URI-k és felépítésük. HTTP: kérések és válaszok felépítése, metódusok, állapotkódok, tartalomegyeztetés, sütik. A web jelölőnyelvei: XML és HTML dokumentumok felépítése. Stíluslap nyelvek. JSON.](tetelek/info/07.md)
+7. tétel
+   [A web működésének alapjai. Web szabványok és szabványügyi szervezetek. URI-k és felépítésük. HTTP: kérések és válaszok felépítése, metódusok, állapotkódok, tartalomegyeztetés, sütik. A web jelölőnyelvei: XML és HTML dokumentumok felépítése. Stíluslap nyelvek. JSON.](tetelek/info/07.md)
 
-8. tétel [Számítógép-hálózatok osztályozási szempontjai. Hálózati rétegmodellek. IP technológia címzési rendszere, és vezérlése. Forgalomirányítás elve és az útválasztási kategóriák jellemzése. TCP és UDP mechanizmusok. ](tetelek/info/08.md)
+8. tétel
+   [Számítógép-hálózatok osztályozási szempontjai. Hálózati rétegmodellek. IP technológia címzési rendszere, és vezérlése. Forgalomirányítás elve és az útválasztási kategóriák jellemzése. TCP és UDP mechanizmusok. ](tetelek/info/08.md)
 
 ---
 
