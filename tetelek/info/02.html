@@ -1,0 +1,542 @@
+<!DOCTYPE html><html><head>
+      <title>02</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Andris\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.22\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/robotomono/v31/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW9.ttf) format('truetype')}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/sourcesanspro/v23/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype')}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/sourcesanspro/v23/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype')}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/sourcesanspro/v23/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype')}*{-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;-webkit-touch-callout:none;box-sizing:border-box}.markdown-preview code{border-radius:2px;color:#e96900;font-size:12.8px;font-size:.8rem;margin:0 2px;padding:3px 5px;white-space:pre-wrap}.markdown-preview code,.markdown-preview pre{background-color:#f8f8f8;font-family:Roboto Mono,Monaco,courier,monospace}.markdown-preview pre{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;line-height:24px;line-height:1.5rem;margin:1.2em 0;overflow:auto;padding:0 22.4px;padding:0 1.4rem;position:relative;word-wrap:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8e908c}.token.namespace{opacity:.7}.token.boolean,.token.number{color:#c76b29}.token.punctuation{color:#525252}.token.property{color:#c08b30}.token.tag{color:#2973b7}.token.string{color:#42b983;color:var(--theme-color,#42b983)}.token.selector{color:#6679cc}.token.attr-name{color:#2973b7}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#22a2c9}.token.attr-value,.token.control,.token.directive,.token.unit{color:#42b983;color:var(--theme-color,#42b983)}.token.keyword{color:#e96900}.token.atrule,.token.regex,.token.statement{color:#22a2c9}.token.placeholder,.token.variable{color:#3d8fd1}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #202746;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#c94922}.token.entity{cursor:help}.markdown-preview pre>code,.markdown-preview pre[class*=language]{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;background-color:#f8f8f8;border-radius:2px;color:#525252;display:block;font-family:Roboto Mono,Monaco,courier,monospace;font-size:12.8px;font-size:.8rem;line-height:2em;max-width:inherit;overflow:inherit;padding:.8em 1.4em;white-space:pre}.markdown-preview pre>code{padding-left:0;padding-right:0}.markdown-preview code:after,.markdown-preview code:before{letter-spacing:.8px;letter-spacing:.05rem}code .token{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;min-height:24px;min-height:1.5rem}pre:after{color:#ccc;content:attr(data-lang);font-size:9.6px;font-size:.6rem;font-weight:600;height:15px;line-height:15px;padding:5px 10px 0;position:absolute;right:0;text-align:right;top:0}pre[data-line]{position:relative;padding:1em 0 1em 3em!important}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}@font-face{font-family:Raleway;font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/raleway/v37/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDrMfJQ.ttf) format('truetype')}@font-face{font-family:Raleway;font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/raleway/v37/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4Y_LDrMfJQ.ttf) format('truetype')}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrQ.ttf) format('truetype')}@font-face{font-family:Raleway;font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrQ.ttf) format('truetype')}body{background:#fcfcfc;color:#111;font-family:Raleway,sans-serif;font-weight:400;font-size:16px}body .math,body .mathjax-exps,body h1,body h2,body h3,body h4,body h5,body h6,body li,body table{color:#111;font-family:Raleway,sans-serif}body h1{font-weight:400;line-height:4rem;margin:0 0 1.75rem;padding:20px 30px;text-align:center;text-transform:uppercase;margin-top:4rem}body h2{font-weight:400;line-height:3rem;margin:0 0 1.9375rem;padding:0 30px;text-align:center;text-transform:uppercase;margin-top:3rem}body h3{font-weight:400}body h4{font-weight:400}body h5{font-size:1.125rem;font-weight:400}body h6{font-size:1rem;font-weight:700}body p{color:#111;font-size:1rem;line-height:1.75rem;margin:0 0 1.25rem}body blockquote{margin-left:1rem;margin-right:0;padding:.5em}body h1{font-size:2.827rem}body h2{font-size:1.999rem}body h3{font-size:1.413rem}body h4{font-size:1.25rem}body h5{font-size:1.15rem}body h6{font-size:1rem}body a{color:#900;text-decoration:none}body a:hover{text-decoration:underline}body table{margin-bottom:20px}body table td,body table th{padding:8px;line-height:1.25rem;vertical-align:top;border-top:1px solid #ddd}body table th{font-weight:700}body table thead th{vertical-align:bottom}body table caption+thead tr:first-child td,body table caption+thead tr:first-child th,body table colgroup+thead tr:first-child td,body table colgroup+thead tr:first-child th,body table thead:first-child tr:first-child td,body table thead:first-child tr:first-child th{border-top:0}body table tbody+tbody{border-top:2px solid #ddd}body code{padding:.5em;color:inherit;border:1px solid #ccc;padding:.1em;font-size:.9em;margin-left:.2em;margin-right:.2em}body pre>code{border:none}body li>p{margin-top:0;margin-bottom:0}body .task-list{padding-left:0}body .task-list-item{list-style:none;margin-left:-2.4em}body .task-list-item input{top:3px;margin-right:1.6em}body .task-list-item input:before{content:'';display:inline-block;width:1rem;height:1rem;vertical-align:middle;text-align:center;border:1px solid gray;background-color:#fdfdfd;margin-left:0;margin-top:-.8rem}body .task-list-item input:checked:before,body .task-list-item input[checked]:before{content:'\25FC';font-size:.8125rem;line-height:.9375rem;margin-top:-1rem}@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:0.001dpcm){body .task-list-item input:before{margin-top:-.2rem}body .task-list-item input:checked:before,body .task-list-item input[checked]:before{margin-top:-.2rem}}body blockquote{margin:0 0 1.11111rem;padding:.5rem 1.11111rem 0 1.05556rem;border-left:1px solid gray;background-color:#ededed}body blockquote,body blockquote p{line-height:1.6;color:#6f6f6f}body img{max-width:100%}body kbd{color:#111}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<p><a href="../../zarovizsga.html">⬅ Vissza a főoldalra</a></p>
+<h2 id="2-tétel-adattípusok-változó-műveletek-operátorok-operandusok-vezérlési-szerkezetek-kifejezések-utasítások-programegységek-paraméterkiértékelés-paraméterátadás-blokk-hatáskörkezelés-láthatóság-absztrakt-adattípus-kivételkezelés">2. tétel: Adattípusok. Változó. Műveletek, operátorok, operandusok. Vezérlési szerkezetek. Kifejezések. Utasítások. Programegységek. Paraméterkiértékelés, paraméterátadás. Blokk. Hatáskörkezelés, láthatóság. Absztrakt adattípus. Kivételkezelés. </h2>
+<hr>
+<h3 id="adattípus">Adattípus </h3>
+<p><strong>Adattípus:</strong> az adatabsztrakció első megjelenési formája; <em>absztakt</em> programozási eszköz, mely egy <em>konkrét</em> programozási eszköz egy <em>komponenseként</em> jelenik meg. Minden adattípusnak <em>neve</em> van, ami egy azonosító.</p>
+<p>Az eljárásorientált programozási nyelvek általában típusos nyelvek, vagyis rendelkeznek típusrendszerrel, és ismerik az adattípusok fogalmát. Ugyanakkor léteznek nem típusos (vagy kevésbé szigorúan típusos) nyelvek is, amelyek nem, vagy csak lazábban kezelik a típusokat (pl. JavaScriptben csinálhatsz olyat, hogy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>5&nbsp;+&nbsp;"alma"</mtext></mrow><annotation encoding="application/x-tex">\text{5 + "alma"}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord text"><span class="mord">5&nbsp;+&nbsp;"alma"</span></span></span></span></span>).</p>
+<p>Egy adattípust három dolog határoz meg:</p>
+<ul>
+<li>
+<p><strong>tartomány</strong>: azokat az értékeket foglalja magában, amelyeket az adott típusú programozási eszköz felvehet.</p>
+</li>
+<li>
+<p><strong>műveletek</strong>: azok a műveletek, amelyek az adott tartomány elemein végrehajthatók.</p>
+</li>
+<li>
+<p><strong>reprezentáció</strong>: az adattípus belső ábrázolási módja, vagyis hogy hogyan jelenik meg a memóriában.</p>
+</li>
+</ul>
+<p>Minden típusos nyelv rendelkezik beépített típusokkal.</p>
+<p>Bizonyos programozási nyelvek lehetővé teszik a programozó számára saját adattípusok definiálását, ami az adatabsztrakció magasabb szintjét jelenti. Ezáltal hatékonyabban modellezhetjük a valós világ objektumainak tulajdonságait és viselkedését. Saját típus létrehozásakor megadjuk annak tartományát, műveleteit és belső reprezentációját, jellemzően beépített vagy korábban definiált típusok felhasználásával.</p>
+<p><strong>Adattípusok csoportjai:</strong></p>
+<ul>
+<li>
+<p><strong>egyszerű (skalár)</strong>: egyszerre csak egy atomi értéket képes tárolni.</p>
+<ul>
+<li>
+<p>numerikus típusok:</p>
+<ul>
+<li>
+<p>egész <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mtext>int</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\text{int})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord text"><span class="mord">int</span></span><span class="mclose">)</span></span></span></span>: fixpontos ábrázolás</p>
+</li>
+<li>
+<p>valós <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mtext>float</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\text{float})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord text"><span class="mord">float</span></span><span class="mclose">)</span></span></span></span>: lebegőpontos ábrázolás</p>
+</li>
+</ul>
+</li>
+<li>
+<p>karakteres típusok:</p>
+<ul>
+<li>
+<p>karakter <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mtext>char</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\text{char})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord text"><span class="mord">char</span></span><span class="mclose">)</span></span></span></span></p>
+</li>
+<li>
+<p>karakterlánc <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mtext>string</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\text{string})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord text"><span class="mord">string</span></span><span class="mclose">)</span></span></span></span>:</p>
+</li>
+</ul>
+</li>
+<li>
+<p>logikai típus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mtext>bool</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\text{bool})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord text"><span class="mord">bool</span></span><span class="mclose">)</span></span></span></span></p>
+</li>
+<li>
+<p>felsorlásos típus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mtext>enum</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\text{enum})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord text"><span class="mord">enum</span></span><span class="mclose">)</span></span></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>összetett (strukturált)</strong>: több egyszerű típusú adatot tartalmaz</p>
+<ul>
+<li>
+<p>tömb - homogén, indexált kollekció, meghatározza a:</p>
+<ul>
+<li>
+<p>diemnzióinak száma: 1D (vektor), 2D (mátrix), ...</p>
+</li>
+<li>
+<p>indexkészlet típusa: egész szám tartomány</p>
+</li>
+<li>
+<p>elemek típusa</p>
+</li>
+</ul>
+</li>
+<li>
+<p>rekord - heterogén adattagok csoportja</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Mutató típus:</strong> egyszerű típus speciális esete, amelynek tartománya memóriacímeket tartalmaz.<br>
+Kulcselemei:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span> művelet: címzett érték elérése</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>NULL</mtext></mrow><annotation encoding="application/x-tex">\text{NULL}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">NULL</span></span></span></span></span>: nem mutat sehova</li>
+</ul>
+<p>Célja: szétszórt adatszerkezetek kezelése.</p>
+<hr>
+<h3 id="változó">Változó </h3>
+<p>A <strong>változó</strong> egy nevesített objektum, aminek 4 komponense van:</p>
+<ul>
+<li>
+<p><strong>név:</strong> azonosító</p>
+</li>
+<li>
+<p><strong>attribútum:</strong> A változó futásidőbeni viselkedését határozza meg (pl. típus, láthatóság). Deklarációval rendeljük hozzá, ezek típusai:</p>
+<ul>
+<li>
+<p><strong>explicit</strong>: programozó adja meg nevesítve</p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token keyword keyword-int">int</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
+String nev<span class="token punctuation">;</span>
+</code></pre></li>
+<li>
+<p><strong>implicit</strong>: programozó betűkhöz rendel attribútumot</p>
+<pre data-role="codeBlock" data-info="BASIC" class="language-basic BASIC"><code>REAL A<span class="token operator">-</span>Z
+X <span class="token operator">=</span> <span class="token number">3.14</span>
+Y <span class="token operator">=</span> <span class="token number">25</span>
+</code></pre></li>
+<li>
+<p><strong>automatikus</strong>: fordítóprogram dönt első használatkor</p>
+<pre data-role="codeBlock" data-info="perl" class="language-perl perl"><code><span class="token variable">$szam</span> <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">;</span>
+<span class="token variable">$szoveg</span> <span class="token operator">=</span> <span class="token string">"hello"</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>cím</strong>: tárbeli hely – kiosztási mód szerint</p>
+<ul>
+<li><strong>Statikus tárkiosztás</strong>: futás előtt fixen eldől, futás alatt változatlan</li>
+<li><strong>Dinamikus tárkiosztás</strong>: futtató rendszer adja aktiváláskor, futás alatt változhat, időnként nincs is cím</li>
+</ul>
+</li>
+<li>
+<p><strong>érték</strong></p>
+</li>
+</ul>
+<hr>
+<h3 id="műveletek-kifejezések-operátorok-operandusok">Műveletek, kifejezések, operátorok, operandusok </h3>
+<table>
+<thead>
+<tr>
+<th>Művelet</th>
+<th>Operátorok</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Aritmetikai</strong></td>
+<td><code>+, -, *, /, %</code></td>
+</tr>
+<tr>
+<td><strong>Logikai</strong></td>
+<td><code>&amp;&amp;, ∥, !</code></td>
+</tr>
+<tr>
+<td><strong>Összehasonlító</strong></td>
+<td><code>==, !=, &lt;, &gt;, &lt;=, &gt;=</code></td>
+</tr>
+<tr>
+<td><strong>Csökkentés/Növelés</strong></td>
+<td><code>+=, -=, ++, --</code></td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>kifejezések</strong> szintaktikai eszközök. Arra valók, hogy a program egy adott pontján ott már ismert értékekből új értéket határozzunk meg.</p>
+<p><strong>Két komponensük van:</strong> <em>érték</em> és <em>típus</em>.</p>
+<p><strong>Formális összetevői:</strong></p>
+<ul>
+<li><strong>Operandusok</strong>: literál, nevesített konstans, változó vagy függvényhívás – az értéket képviselik</li>
+<li><strong>Operátorok</strong>: műveleti jelek – az értékekkel végrehajtandó műveleteket határozzák meg</li>
+<li><strong>Kerek zárójelek</strong>: a műveletek végrehajtási sorrendjét befolyásolják (redundáns zárójelek minden nyelvben megengedettek)</li>
+</ul>
+<p>Legegyszerűbb kifejezés egyetlen operandusból áll.</p>
+<p><strong>Operátorok operandusok száma szerint:</strong></p>
+<ul>
+<li>
+<p><strong>Egyoperandusú (unáris)</strong>: <code>!x</code>, <code>++x</code>, <code>-x</code></p>
+</li>
+<li>
+<p><strong>Kétoperandusú (bináris)</strong>: <code>x + y</code>, <code>x &amp;&amp; y</code>, <code>x == y</code></p>
+</li>
+<li>
+<p><strong>Háromoperandusú (ternáris)</strong>: <code>feltétel ? igaz : hamis</code></p>
+</li>
+</ul>
+<p><strong>Kifejezés alakjai</strong> (kétoperandusú operátoroknál):</p>
+<table>
+<thead>
+<tr>
+<th>Alak</th>
+<th>Operátor helye</th>
+<th>Példa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Prefix</strong></td>
+<td>Operandusok <strong>előtt</strong></td>
+<td><code>* 3 5</code></td>
+</tr>
+<tr>
+<td><strong>Infix</strong></td>
+<td>Operandusok <strong>között</strong></td>
+<td><code>3 * 5</code></td>
+</tr>
+<tr>
+<td><strong>Postfix</strong></td>
+<td>Operandusok <strong>után</strong></td>
+<td><code>3 5 *</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kifejezés kiértékelése</strong>: a folyamat, amely során a kifejezés értéke és típusa meghatározódik.</p>
+<p><strong>Lényege</strong>: adott sorrendben elvégezzük a műveleteket <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> megszerezzük az értéket <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> hozzárendeljük a típust.</p>
+<hr>
+<h3 id="vezérlési-szerkezetek">Vezérlési szerkezetek </h3>
+<p>Az utasítások alkotják az eljárásorientált nyelveken megírt programok olyan egységeit, amelyekkel egyrészt az algoritmusok egyes lépéseit megadjuk, másrészt a fordítóprogram ezek segítségével generálja a tárgyprogramot.</p>
+<p>Két csoportjuk van:</p>
+<ul>
+<li>
+<p><strong>deklarációs</strong>:</p>
+<ul>
+<li>
+<p>Nincs tárgykód mögötte</p>
+</li>
+<li>
+<p>Fordítóprogramnak szól</p>
+</li>
+<li>
+<p>Nem fordítódnak le, csak befolyásolják a tárgykódot</p>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token keyword keyword-int">int</span> x<span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> <span class="token keyword keyword-double">double</span> PI <span class="token operator">=</span> <span class="token number">3.14</span><span class="token punctuation">;</span>
+</code></pre></li>
+<li>
+<p><strong>végrehajtható</strong> (tárgykód generálódik):</p>
+<ol>
+<li>
+<p><strong>Értékadó utasítás:</strong> <code>x = 5;</code><br>
+A program futása közben egy (esetleg több) változó értékkomponensét állítja be vagy módosítja.</p>
+</li>
+<li>
+<p><strong>Üres utasítás:</strong> <code>;</code><br>
+Szintaktikai cél, egyértelmű programszerkezet kialakításához; némely nyelvekben külön alapszava van (pl. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>NULL</mtext></mrow><annotation encoding="application/x-tex">\text{NULL}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">NULL</span></span></span></span></span>), máshol csak a hiányzó állítás formájában.</p>
+</li>
+<li>
+<p><strong>Ugró utasítás:</strong> <code>goto label;</code><br>
+Feltétel nélküli vezérlésátadó utasítás, amellyel a vezérlést egy címkével jelölt pontra adjuk át; korai nyelvekben lényeges, de fegyelmezetlen használata struktúra nélküli, nehezen átlátható kódot eredményezhet.</p>
+</li>
+<li>
+<p><strong>Elágaztató utasítás:</strong> <code>if (x &gt; 0) ...</code><br>
+Kétirányú (feltételes) elágaztató utasítás: ha a feltétel igaz, végrehajtódik a THEN–ág, egyébként az ELSE–ág vagy (ha nincs) üres utasítás. Egyes nyelvekben IF-ágak tetszőlegesen egymásba ágyazhatók.</p>
+</li>
+<li>
+<p><strong>Ciklusszervező utasítás:</strong> <code>while (x &lt; 10) ...</code><br>
+Feltételes (kezdőfeltételes) ciklus: a mag addig ismétlődik, amíg a feltétel igaz; lehet üres (ha a feltétel rögtön hamis) vagy végtelen ciklus (ha a feltétel sosem válik hamissá).</p>
+</li>
+<li>
+<p><strong>Hívó utasítás:</strong> <code>printf("szöveg");</code><br>
+A programból függvény vagy eljárás meghívására szolgál, átadva neki paramétereket.</p>
+</li>
+<li>
+<p><strong>Vezérlésátadó utasítás:</strong> <code>return 0;</code><br>
+A függvény vagy eljárás végrehajtását szabályosan befejezi és visszaadja a vezérlést a hívó oldalnak, esetleg visszatérési értéket is ad vissza.</p>
+</li>
+<li>
+<p><strong>I/O utasítás:</strong> <code>scanf("%d", &amp;x);</code><br>
+Bemeneti vagy kimeneti műveletet végző utasítás, itt például a felhasználótól egész számot olvas be és az <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> változóba helyezi.</p>
+</li>
+<li>
+<p><strong>Egyéb utasítás:</strong><br>
+Ide tartozhatnak a nyelv sajátos végrehajtható utasításai, például deklarációk, deklarációjal keveredő utasítások, vagy a nyelv speciális vezérlési konstrukciói, amelyek a fenti típusokon kívül esnek.</p>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="programegységek">Programegységek </h3>
+<p>A program kódját tagoló elemek, amelyek a program logikáját kisebb, kezelhetőbb részekre bontják. Ezek a program szövegét többé‑kevésbé független, önálló egységekre (pl. alprogram, blokk, csomag, taszk) tagolják, amelyek közötti viszonyokat, fordítási egységeket és kommunikációt a programnyelv szabályozza.</p>
+<p><strong>Alprogram</strong> – procedurális absztrakció, újrafelhasználható programrész, amely bemeneti adatot képez le kimeneti adatra, anélkül, hogy ismernénk az implementációt.</p>
+<ul>
+<li>
+<p><strong>Felépítése</strong>:</p>
+<ul>
+<li>
+<p><strong>fej / specifikáció</strong>: tartalmazza az alprogram (pl. függvény vagy eljárás) alapvető információit: a <strong>nevet</strong>, a <strong>visszatérési típust</strong> (ha van), valamint a <strong>formális paraméterek listáját</strong>. Ez határozza meg, hogyan kell meghívni az alprogramot: milyen neve van, hány és milyen típusú paramétert kell átadni, és milyen típusú értéket ad vissza a függvény.</p>
+</li>
+<li>
+<p><strong>törzs / implementáció</strong>: itt szerepelnek a <strong>deklarációk</strong> és a <strong>végrehajtható utasítások</strong>, amelyek a paraméterekkel dolgoznak, számolnak, változókat módosítanak, és előállítják a kívánt eredményt. Ez a rész rejtve marad a hívó oldal előtt, csak a fej alapján kell tudni, hogyan viselkedik az alprogram.</p>
+</li>
+<li>
+<p><strong>vég</strong>: a törzs lezárását jelöli, vagyis azt a pontot, ahol az alprogram végrehajtása befejeződik és a vezérlés visszatér a hívóhoz. A nyelvekben ez lehet egy <strong>záró kapcsos zárójel</strong> (pl. C, C++, Java), egy <strong>END</strong> szó (pl. Pascal, Python‑nál osztály/tag végén), vagy egy <strong>RETURN</strong> utasítás, amely egyben a visszatérési értéket is megadja.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Komponensei</strong>:</p>
+<ul>
+<li><strong>név</strong> – egyedi azonosító, amivel a programból hívjuk az alprogramot (pl. <code>osszeg</code>).</li>
+<li><strong>formális paraméterlista</strong> – az „alprogram bemenetei”, amelyeket a hívás helyén konkrét értékekkel töltünk fel (pl. <code>int a, int b</code>).</li>
+<li><strong>törzs</strong> – a belső működés: változók deklarációja és utasítások, amelyek a paraméterekkel számolnak (pl. <code>return a + b;</code>).</li>
+<li><strong>környezet (globális nevek)</strong> – az alprogramon kívül deklarált nevek, amelyeket a törzsben mégis használhatunk (pl. globális <code>int x</code>), de a belső változók (pl. <code>eredmeny</code>) nem láthatók a környezetből.</li>
+</ul>
+</li>
+<li>
+<p><strong>Fajtái</strong>:</p>
+<ul>
+<li>
+<p><strong>eljárás</strong>: tevékenységet végez, paramétereket vagy a környezetet változtathat;</p>
+</li>
+<li>
+<p><strong>függvény</strong>: egyetlen értéket számol; visszatérési értékét a neve hordozza, mellékhatás (pl. paraméterek vagy globális változók megváltoztatása, külön kimenet generálása) kerülendő, mert nehezíti a program követhetőségét és ugyanazzal a bemenettel másként viselkedhet.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Hívás</strong>:</p>
+<ul>
+<li>
+<p><strong>eljárás</strong>: utasításszerűen hívható, vezérlés odaadódik, majd a hívás után folytatódik;</p>
+</li>
+<li>
+<p><strong>függvény</strong>: csak kifejezésen belül hívható, a kiértékelés után visszatér a kifejezéshez.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Főprogram</strong>: minden eljárásorientált programnak van egy speciális alprogramja, a főprogram, amely a vezérlést kapja, koordinálja a többi alprogramot, és a program szabályos befejeződése a főprogram végrehajtásával történik.</p>
+</li>
+</ul>
+<hr>
+<p><strong>Blokk</strong></p>
+<p>A <strong>blokk</strong> olyan programegység, amely csak másik programegység belsejében helyezkedhet el, külső szinten nem állhat.</p>
+<p>Formálisan a blokknak van <strong>kezdete</strong>, <strong>törzse</strong> és <strong>vége</strong>. A kezdetet és a véget egy-egy speciális karaktersorozat vagy alapszó jelzi.</p>
+<p>A törzsben lehetnek <strong>deklarációs</strong> és <strong>végrehajtható utasítások</strong>; ezek vagy tetszőlegesen keverhetők, vagy van külön deklarációs és végrehajtható rész.</p>
+<p>A blokknak <strong>nincs paramétere</strong>; egyes nyelvekben azonban lehet <strong>neve</strong>, amely a blokk elején álló címke jelöl.</p>
+<p>A blokkot az eljárásorientált nyelveknek csak egy része ismeri, fő szerepe a <strong>nevek hatáskörének elhatárolása</strong>.</p>
+<p><strong>Példa (C‑szerű nyelvben)</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token punctuation">{</span>
+    <span class="token keyword keyword-int">int</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-int">int</span> b <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> a <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<p><strong>Csomag</strong> – olyan programegység, amely egyaránt szolgálja a procedurális és adatabsztrakciót.</p>
+<p><strong>Procedurális absztrakció</strong>: egy műveletcsoportot elrejtünk egy alprogramban, a hívó csak a specifikációt (mit csinál) látja, az implementációt (hogyan) nem.</p>
+<p><strong>Adatabsztrakció</strong>: az adatot és a hozzá tartozó műveleteket egységbezárjuk, a belső szerkezetet elrejtjük. A külvilág csak meghatározott műveletekkel keresztül dolgozik az adattal.</p>
+<p>A <strong>csomagot</strong> a <strong>procedurális absztrakció</strong> oldaláról tekintve egy „készletként” vagy könyvtárként kell érteni, amelyben sokféle programozási eszközt gyűjtünk össze (típus, változó, nevesített konstans, kivétel, alprogram, csomag), és ezeket a későbbiekben újra és újra felhasználhatjuk.</p>
+<p>Megvalósítja a <strong>bezárás</strong> (encapsulation) elvét: a csomagon belül lévő részletek nem láthatók, csak a csomag közölt része érhető el.</p>
+<hr>
+<h3 id="hatáskörkezelés-láthatóság">Hatáskörkezelés, láthatóság </h3>
+<p><strong>Hatáskör:</strong> Egy név hatásköre a program szövegének azon része, ahol az adott név ugyanazt a programozási eszközt jelenti, és a jelentése, felhasználási módja, jellemzői azonosak. A hatáskör szinonimája a <strong>láthatóság</strong>.</p>
+<ul>
+<li>
+<p>A név hatásköre az eljárásorientált programozási nyelvekben a <strong>programegységekhez</strong> (pl. alprogram, blokk, csomag) és a <strong>fordítási egységekhez</strong> kapcsolódik.</p>
+</li>
+<li>
+<p>Egy <strong>programegységben deklarált</strong> nevet a programegység <strong>lokális nevének</strong> nevezünk; ez a név a programegységen kívülről nem látható.</p>
+</li>
+<li>
+<p>A <strong>szabad név</strong> olyan név, amelyet <strong>nem a programegységben</strong> deklaráltunk, hanem máshol, de a programegységben hivatkozunk rá.</p>
+</li>
+</ul>
+<p><strong>Példa (C‑szerű nyelvben)</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token keyword keyword-int">int</span> x <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>              <span class="token comment">// globális változó, hatásköre a teljes programban</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">fuggveny</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-int">int</span> x <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>          <span class="token comment">// lokális változó, csak itt látható</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// a 20-at írja ki, a függvényen belüli x-re hivatkozik</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">// a 10-et írja ki, a globális x-re hivatkozik</span>
+</code></pre><p>A <strong>globális <code>x</code></strong> hatásköre a teljes programban érvényes, de a <strong>függvény belül deklarált <code>x</code></strong> csak a függvényen belül látható (lokális név), a külső <code>x</code> pedig a függvényben <strong>szabad név</strong>.</p>
+<hr>
+<h3 id="paraméterkiértékelés-paraméterátadás">Paraméterkiértékelés, paraméterátadás </h3>
+<p><strong>Paraméterkiértékelés</strong></p>
+<p>A <strong>paraméterkiértékelés</strong> az az a folyamat, amely egy alprogram hívásánál lejátszódik, és során a <strong>formális paraméterek</strong> és az <strong>aktuális paraméterek</strong> egymáshoz rendelődnek. Ilyenkor meghatározottak lesznek azok az információk, amelyek a <strong>paraméterátadás</strong> során a kommunikációt szolgálják az alprogram és a hívó rész között (pl. milyen érték, milyen irányban kerül átadásra).</p>
+<p><strong>Példa</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token keyword keyword-int">int</span> <span class="token function">osszeg</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> a<span class="token punctuation">,</span> <span class="token keyword keyword-int">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-return">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-int">int</span> eredmeny <span class="token operator">=</span> <span class="token function">osszeg</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// hívás</span>
+</code></pre><ul>
+<li>
+<p>A hívásnál a <strong>formális paraméterek</strong> <code>a</code> és <code>b</code>, az <strong>aktuális paraméterek</strong> pedig a <code>5</code> és <code>7</code> értékek.</p>
+</li>
+<li>
+<p>A <strong>paraméterkiértékelés</strong> során a <code>5</code> „kerül” az <code>a</code> helyére, a <code>7</code> pedig a <code>b</code> helyére, így az alprogram már ezekkel az értékekkel dolgozik.</p>
+</li>
+</ul>
+<p><strong>Paraméterátadás</strong></p>
+<p>A <strong>paraméterátadás</strong> az alprogramok és más programegységek közötti <strong>kommunikáció egy formája</strong>. A paraméterátadásnál mindig van egy <strong>hívó</strong> (ez tetszőleges programegység lehet) és egy <strong>hívott</strong> (ami mindig alprogram). A lényeges kérdés, hogy <strong>milyen irányban</strong> és <strong>milyen információ</strong> halad a két egység között (pl. csak érték, cím, visszatérési érték stb.).</p>
+<p>A nyelvek a következő <strong>paraméterátadási módokat</strong> ismerik:</p>
+<ul>
+<li>
+<p><strong>érték szerinti</strong>: a hívó egy értéket ad át, a hívott csak ezt az értéket lát, a hívó változója nem változik.</p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token keyword keyword-int">int</span> nö<span class="token function">vel</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    a <span class="token operator">=</span> a <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>                 <span class="token comment">// csak a másolat változik</span>
+    <span class="token keyword keyword-return">return</span> a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-int">int</span> x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-int">int</span> y <span class="token operator">=</span> nö<span class="token function">vel</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>              <span class="token comment">// x továbbra is 5, y lesz 6</span>
+</code></pre></li>
+<li>
+<p><strong>cím szerinti</strong>: a hívó a változó <strong>címe</strong> (memóriacím) kerül átadásra, a hívott közvetlenül a hívó változóját tudja módosítani.</p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token keyword keyword-void">void</span> nö<span class="token function">vel</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> <span class="token operator">*</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>           <span class="token comment">// a egy cím a hívott változóra</span>
+    <span class="token punctuation">(</span><span class="token operator">*</span>a<span class="token punctuation">)</span><span class="token operator">++</span><span class="token punctuation">;</span>                    <span class="token comment">// a hívó eredeti változója nő</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-int">int</span> x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+nö<span class="token function">vel</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>                     <span class="token comment">// x most 6 lesz</span>
+</code></pre></li>
+<li>
+<p><strong>eredmény szerinti</strong>: a hívó nem ad át kezdeti értéket, csak a hívott után egy <strong>visszatérési érték</strong> kerül a hívóhoz.</p>
+<p>(C‑ben nincs tiszta commit-result, de fogalmilag így képzelhető el Pascal‑szerű nyelvben):</p>
+<pre data-role="codeBlock" data-info="pascal" class="language-pascal pascal"><code><span class="token keyword keyword-procedure">procedure</span> duplaz<span class="token punctuation">(</span><span class="token keyword keyword-var">var</span> a<span class="token punctuation">:</span> integer<span class="token punctuation">;</span> <span class="token keyword keyword-out">out</span> <span class="token keyword keyword-result">result</span><span class="token punctuation">:</span> integer<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// result-nak nincs értéke</span>
+<span class="token keyword keyword-begin">begin</span>
+    <span class="token keyword keyword-result">result</span> <span class="token operator">:=</span> a <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-end">end</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Hívóban:</span>
+be <span class="token operator">:=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+duplaz<span class="token punctuation">(</span>be<span class="token punctuation">,</span> eredmeny<span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token comment">// be a bemenet, eredmeny fogja kapni a duplát</span>
+</code></pre><p>A hívó csak a <code>result</code> változójában kap vissza értéket.</p>
+</li>
+<li>
+<p><strong>érték-eredmény szerinti</strong>: a hívó kezdeti értéket ad, a hívott ezt módosítja, majd a <strong>változott érték</strong> visszakerül a hívóhoz.</p>
+<pre data-role="codeBlock" data-info="pascal" class="language-pascal pascal"><code><span class="token keyword keyword-procedure">procedure</span> növel<span class="token punctuation">(</span><span class="token keyword keyword-var">var</span> a<span class="token punctuation">:</span> integer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-begin">begin</span>
+    a <span class="token operator">:=</span> a <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>                <span class="token comment">// a hívó a változója nő most</span>
+<span class="token keyword keyword-end">end</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Hívóban:</span>
+a <span class="token operator">:=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+növel<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// a most 6 lesz</span>
+
+</code></pre></li>
+<li>
+<p><strong>név szerinti</strong>: a hívó egy <strong>kifejezést</strong> ad át, amit a hívott minden hivatkozáskor újra kiértékel.</p>
+<pre data-role="codeBlock" data-info="pascal" class="language-pascal pascal"><code><span class="token keyword keyword-procedure">procedure</span> kiir<span class="token punctuation">(</span><span class="token keyword keyword-var">var</span> x<span class="token punctuation">:</span> integer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-begin">begin</span>
+    writeln<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token comment">// x minden kiírásnál újra kiértékelődik</span>
+<span class="token keyword keyword-end">end</span><span class="token punctuation">;</span>
+
+i <span class="token operator">:=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token keyword keyword-do">do</span> <span class="token keyword keyword-begin">begin</span>
+    kiir<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    i <span class="token operator">:=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-end">end</span><span class="token punctuation">;</span>
+</code></pre></li>
+<li>
+<p><strong>szöveg szerinti</strong>: a hívó egy <strong>szöveges részletet</strong> (pl. makrót, részprogramot) ad át, amelyet a hívott közvetlenül beilleszt.</p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">N</span><span class="token expression">Ö<span class="token function">VEL</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span></span></span>
+
+<span class="token keyword keyword-int">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+NÖ<span class="token function">VEL</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>Itt a <code>X</code> paraméter <strong>szövegként</strong> cserélődik a hívás helyén, nem értékként vagy címként.</p>
+</li>
+</ul>
+<hr>
+<h3 id="absztrakt-adattípus">Absztrakt adattípus </h3>
+<p>Az <strong>absztrakt adattípus</strong> olyan adattípus, amely megvalósítja a <strong>bezárás</strong> (információ rejtés) elvét. Ez azt jelenti, hogy az adattípus <strong>reprezentációját</strong> és a <strong>műveletek implementációját</strong> nem ismerjük; ezeket az adattípus <strong>nem mutatja meg</strong> a külvilág számára.</p>
+<p>Az ilyen típus értékeihez csak <strong>szabályozott módon</strong> férhetünk hozzá: a műveletek <strong>specifikációi</strong> által meghatározott <strong>interfészen</strong> keresztül. Ezért az értékeket <strong>véletlenül vagy szándékosan sem ronthatjuk el</strong>, ami jelentősen hozzájárul a <strong>biztonságos programozáshoz</strong>.</p>
+<p><strong>Példa – verem (stack) absztrakt adattípussal</strong></p>
+<p>Gondoljunk egy <strong>veremre</strong> (LIFO – utolsónak betett, elsőnek kivett) absztrakt adattípusra:</p>
+<ul>
+<li>
+<p><strong>Tudjuk</strong>, hogy van rajta:</p>
+<ul>
+<li>
+<p><code>push(x)</code> – belerak egy értéket a verem tetejére,</p>
+</li>
+<li>
+<p><code>pop()</code> – leveszi a verem tetején lévő elemet,</p>
+</li>
+<li>
+<p><code>isEmpty()</code> – megmondja, hogy üres-e a verem.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Nem tudjuk</strong>, hogy a verem belsejében:</p>
+<ul>
+<li>
+<p><strong>hogyan</strong> van tárolva (tömbben vagy láncolt listában),</p>
+</li>
+<li>
+<p><strong>milyen</strong> reprezentáció szerint (pl. tömbindex, mutatók stb.),</p>
+</li>
+<li>
+<p><strong>milyen</strong> algoritmus hajtja végre a műveleteket.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Ha a verem csak a <code>push</code>, <code>pop</code> és <code>isEmpty</code> műveleteket teszi elérhetővé, akkor a <strong>felhasználó</strong> nem tud közvetlenül hozzányúlni a belső tömbhöz vagy a mutatókhoz – csak ezen interfészen keresztül építheti fel vagy szedi le a vermet. Ezért <strong>nem ronhatja el</strong> a verem belső állapotát, még véletlenül sem.</p>
+<hr>
+<h3 id="kivételkezelés">Kivételkezelés </h3>
+<p>A <strong>kivételkezelési eszközrendszer</strong> azt teszi lehetővé, hogy az operációs rendszer <strong>megszakításainak</strong> kezelését <strong>felhozzuk a program szintjére</strong>: a programnak is lehet saját „kivételekkel” reagálnia nem várt eseményekre.</p>
+<ul>
+<li>
+<p>A <strong>kivételek</strong> olyan <strong>események</strong>, amelyek <strong>megszakítják</strong> a normál végrehajtási sorrendet (pl. hibás osztás, hibás memóriahozzáférés, hálózati hiba).</p>
+</li>
+<li>
+<p>A <strong>kivételkezelés</strong> az a <strong>tevékenység</strong>, amit a program akkor végez, ha egy ilyen kivétel bekövetkezik: elkapja, feldolgozza, és rendes nyilván rendezhető állapotba viszi vissza a programot.</p>
+</li>
+<li>
+<p>A <strong>kivételkezelő</strong> egy olyan <strong>programrész</strong>, amely <strong>működésbe lép</strong> egy adott kivétel bekövetkezte után, és <strong>reakciót</strong> vezérel az eseményre (pl. hibaüzenet, alternatív útvonal, visszatérés).</p>
+</li>
+<li>
+<p>A kivételkezelés az <strong>eseményvezérelt</strong> programozás egy formája: a program <strong>az eseményekre</strong> (kivételekre) adott esetekben <strong>előre meghatározott reakciókkal</strong> válaszol.</p>
+</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
