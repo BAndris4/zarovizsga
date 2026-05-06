@@ -2,6 +2,12 @@
 
 ---
 
+## Segédletek
+
+- [Görög betűk kiejtése](tetelek/matek/gorog_betuk.md)
+
+---
+
 ## Matek
 
 1. tétel
@@ -56,7 +62,3 @@
    [Számítógép-hálózatok osztályozási szempontjai. Hálózati rétegmodellek. IP technológia címzési rendszere, és vezérlése. Forgalomirányítás elve és az útválasztási kategóriák jellemzése. TCP és UDP mechanizmusok. ](tetelek/info/08.md)
 
 ---
-
-## Segédletek
-
-- [Görög betűk kiejtése](tetelek/matek/gorog_betuk.md)
