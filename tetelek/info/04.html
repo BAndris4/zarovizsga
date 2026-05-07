@@ -1,0 +1,609 @@
+<!DOCTYPE html><html><head>
+      <title>04</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600);
+*{-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;-webkit-touch-callout:none;box-sizing:border-box}.markdown-preview code{border-radius:2px;color:#e96900;font-size:12.8px;font-size:.8rem;margin:0 2px;padding:3px 5px;white-space:pre-wrap}.markdown-preview code,.markdown-preview pre{background-color:#f8f8f8;font-family:Roboto Mono,Monaco,courier,monospace}.markdown-preview pre{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;line-height:24px;line-height:1.5rem;margin:1.2em 0;overflow:auto;padding:0 22.4px;padding:0 1.4rem;position:relative;word-wrap:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8e908c}.token.namespace{opacity:.7}.token.boolean,.token.number{color:#c76b29}.token.punctuation{color:#525252}.token.property{color:#c08b30}.token.tag{color:#2973b7}.token.string{color:#42b983;color:var(--theme-color,#42b983)}.token.selector{color:#6679cc}.token.attr-name{color:#2973b7}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#22a2c9}.token.attr-value,.token.control,.token.directive,.token.unit{color:#42b983;color:var(--theme-color,#42b983)}.token.keyword{color:#e96900}.token.atrule,.token.regex,.token.statement{color:#22a2c9}.token.placeholder,.token.variable{color:#3d8fd1}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #202746;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#c94922}.token.entity{cursor:help}.markdown-preview pre>code,.markdown-preview pre[class*=language]{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;background-color:#f8f8f8;border-radius:2px;color:#525252;display:block;font-family:Roboto Mono,Monaco,courier,monospace;font-size:12.8px;font-size:.8rem;line-height:2em;max-width:inherit;overflow:inherit;padding:.8em 1.4em;white-space:pre}.markdown-preview pre>code{padding-left:0;padding-right:0}.markdown-preview code:after,.markdown-preview code:before{letter-spacing:.8px;letter-spacing:.05rem}code .token{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;min-height:24px;min-height:1.5rem}pre:after{color:#ccc;content:attr(data-lang);font-size:9.6px;font-size:.6rem;font-weight:600;height:15px;line-height:15px;padding:5px 10px 0;position:absolute;right:0;text-align:right;top:0}pre[data-line]{position:relative;padding:1em 0 1em 3em!important}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}*{-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;-webkit-touch-callout:none;box-sizing:border-box}div#app{font-size:30px;font-weight:lighter;margin:40vh auto;text-align:center}div#app:empty:before{content:'Loading...'}.emoji{height:19.2px;height:1.2rem;vertical-align:middle}.progress{background-color:#42b983;background-color:var(--theme-color,#42b983);height:2px;left:0;position:fixed;right:0;top:0;transition:width .2s,opacity .4s;width:0;z-index:5}.search .search-keyword,.search a:hover{color:#42b983;color:var(--theme-color,#42b983)}.search .search-keyword{font-style:normal;font-weight:700}body,html{height:100%}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:#34495e;font-family:Source Sans Pro,Helvetica Neue,Arial,sans-serif;font-size:15px;letter-spacing:0;margin:0;overflow-x:hidden}img{max-width:100%}a[disabled]{cursor:not-allowed;opacity:.6}kbd{color:#34495e;border:1px solid #ccc;border-radius:3px;display:inline-block;font-size:12px!important;line-height:12px;margin-bottom:3px;padding:3px 5px;vertical-align:middle}.task-list-item{list-style-type:none}li input[type=checkbox]{margin:0 .2em .25em -1.6em;vertical-align:middle}.app-nav{left:0;margin:25px 60px 0 0;position:absolute;right:0;text-align:right;z-index:2}.app-nav p{margin:0}.app-nav>a{margin:0 16px;margin:0 1rem;padding:5px 0}.app-nav li,.app-nav ul{display:inline-block;list-style:none;margin:0}.app-nav a{color:inherit;font-size:16px;text-decoration:none;transition:color .3s}.app-nav a.active,.app-nav a:hover{color:#42b983;color:var(--theme-color,#42b983)}.app-nav a.active{border-bottom:2px solid #42b983;border-bottom:2px solid var(--theme-color,#42b983)}.app-nav li{display:inline-block;margin:0 16px;margin:0 1rem;padding:5px 0;position:relative}.app-nav li ul{background-color:#fff;border:1px solid #ddd;border-bottom-color:#ccc;border-radius:4px;box-sizing:border-box;display:none;max-height:calc(100vh - 61px);overflow-y:scroll;padding:10px 0;position:absolute;right:-15px;text-align:left;top:100%;white-space:nowrap}.app-nav li ul li{display:block;font-size:14px;line-height:16px;line-height:1rem;margin:0;margin:8px 14px;white-space:nowrap}.app-nav li ul a{display:block;font-size:inherit;margin:0;padding:0}.app-nav li ul a.active{border-bottom:0}.app-nav li:hover ul{display:block}.app-nav.no-badge{margin-right:25px}.github-corner{border-bottom:0;position:fixed;right:0;text-decoration:none;top:0;z-index:1}.github-corner svg{color:#fff;fill:#42b983;fill:var(--theme-color,#42b983);height:80px;width:80px}.github-corner:hover .octo-arm{-webkit-animation:a .56s ease-in-out;animation:a .56s ease-in-out}main{display:block;position:relative;width:100vw;height:100%;z-index:0}.anchor{display:inline-block;text-decoration:none;transition:all .3s}.anchor span{color:#34495e}.anchor:hover{text-decoration:underline}.sidebar{border-right:1px solid rgba(0,0,0,.07);overflow-y:auto;padding:40px 0 0;top:0;bottom:0;left:0;position:absolute;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out;width:300px;z-index:3}.sidebar>h1{margin:0 auto 16px;margin:0 auto 1rem;font-size:24px;font-size:1.5rem;font-weight:300;text-align:center}.sidebar>h1 a{color:inherit;text-decoration:none}.sidebar>h1 .app-nav{display:block;position:static}.sidebar .sidebar-nav{line-height:2em;padding-bottom:40px}.sidebar ul{margin:0;padding:0}.sidebar li>p{font-weight:700;margin:0}.sidebar ul,.sidebar ul li{list-style:none}.sidebar ul li a{border-bottom:none;display:block}.sidebar ul li ul{padding-left:20px}.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-thumb{background:0 0;border-radius:4px}.sidebar:hover::-webkit-scrollbar-thumb{background:hsla(0,0%,53%,.4)}.sidebar:hover::-webkit-scrollbar-track{background:hsla(0,0%,53%,.1)}.sidebar-toggle{background-color:transparent;background-color:hsla(0,0%,100%,.8);border:0;outline:0;padding:10px;bottom:0;left:0;position:absolute;text-align:center;transition:opacity .3s;width:30px;width:284px;z-index:4}.sidebar-toggle .sidebar-toggle-button:hover{opacity:.4}.sidebar-toggle span{background-color:#42b983;background-color:var(--theme-color,#42b983);display:block;margin-bottom:4px;width:16px;height:2px}body.sticky .sidebar,body.sticky .sidebar-toggle{position:fixed}.content{padding-top:60px;top:0;right:0;bottom:0;left:300px;position:absolute;transition:left .25s ease}.markdown-preview>*{box-sizing:border-box;font-size:inherit}.markdown-preview>:first-child{margin-top:0!important}.markdown-preview hr{border:none;border-bottom:1px solid #eee;margin:2em 0}.markdown-preview table{border-collapse:collapse;border-spacing:0;display:block;margin-bottom:16px;margin-bottom:1rem;overflow:auto;width:100%}.markdown-preview th{font-weight:700}.markdown-preview td,.markdown-preview th{border:1px solid #ddd;padding:6px 13px}.markdown-preview tr{border-top:1px solid #ccc}.markdown-preview p.tip,.markdown-preview tr:nth-child(2n){background-color:#f8f8f8}.markdown-preview p.tip{border-bottom-right-radius:2px;border-left:4px solid #f66;border-top-right-radius:2px;margin:2em 0;padding:12px 24px 12px 30px;position:relative}.markdown-preview p.tip code{background-color:#efefef}.markdown-preview p.tip em{color:#34495e}.markdown-preview p.tip:before{background-color:#f66;border-radius:100%;color:#fff;content:'!';font-family:Dosis,Source Sans Pro,Helvetica Neue,Arial,sans-serif;font-size:14px;font-weight:700;left:-12px;line-height:20px;position:absolute;width:20px;height:20px;text-align:center;top:14px}.markdown-preview p.warn{background:rgba(66,185,131,.1);border-radius:2px;padding:16px;padding:1rem}body.close .sidebar{-webkit-transform:translateX(-300px);transform:translateX(-300px)}body.close .sidebar-toggle{width:auto}body.close .content{left:0}@media print{.app-nav,.github-corner,.sidebar,.sidebar-toggle{display:none}}@media screen and (max-width:768px){.github-corner,.sidebar,.sidebar-toggle{position:fixed}.app-nav{margin-top:16px}.app-nav li ul{top:30px}main{height:auto;overflow-x:hidden}.sidebar{left:-300px;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.content{left:0;max-width:100vw;position:static;padding-top:20px;transition:-webkit-transform .25s ease;transition:transform .25s ease;transition:transform .25s ease,-webkit-transform .25s ease}.app-nav,.github-corner{transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.sidebar-toggle{background-color:transparent;width:auto;padding:30px 30px 10px 10px}body.close .sidebar{-webkit-transform:translateX(300px);transform:translateX(300px)}body.close .sidebar-toggle{background-color:hsla(0,0%,100%,.8);transition:background-color 1s;width:284px;padding:10px}body.close .content{-webkit-transform:translateX(300px);transform:translateX(300px)}body.close .app-nav,body.close .github-corner{display:none}.github-corner .octo-arm{-webkit-animation:a .56s ease-in-out;animation:a .56s ease-in-out}.github-corner:hover .octo-arm{-webkit-animation:none;animation:none}}@-webkit-keyframes a{0%,to{-webkit-transform:rotate(0);transform:rotate(0)}20%,60%{-webkit-transform:rotate(-25deg);transform:rotate(-25deg)}40%,80%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}}@keyframes a{0%,to{-webkit-transform:rotate(0);transform:rotate(0)}20%,60%{-webkit-transform:rotate(-25deg);transform:rotate(-25deg)}40%,80%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}}section.cover{-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-position:50%;background-repeat:no-repeat;background-size:cover;height:100vh;display:none}section.cover .cover-main{-webkit-box-flex:1;-ms-flex:1;flex:1;margin:-20px 16px 0;text-align:center;z-index:1}section.cover a{color:inherit}section.cover a,section.cover a:hover{text-decoration:none}section.cover p{line-height:24px;line-height:1.5rem;margin:1em 0}section.cover h1{color:inherit;font-size:40px;font-size:2.5rem;font-weight:300;margin:10px 0 40px;margin:.625rem 0 2.5rem;position:relative;text-align:center}section.cover h1 a{display:block}section.cover h1 small{bottom:-7px;bottom:-.4375rem;font-size:16px;font-size:1rem;position:absolute}section.cover blockquote{font-size:24px;font-size:1.5rem;text-align:center}section.cover ul{line-height:1.8;list-style-type:none;margin:1em auto;max-width:500px;padding:0}section.cover .cover-main>p:last-child a{border-color:#42b983;border:1px solid var(--theme-color,#42b983);border-radius:2rem;box-sizing:border-box;color:#42b983;color:var(--theme-color,#42b983);display:inline-block;font-size:16.8px;font-size:1.05rem;letter-spacing:1.6px;letter-spacing:.1rem;margin-right:16px;margin-right:1rem;padding:.75em 32px;padding:.75em 2rem;text-decoration:none;transition:all .15s ease}section.cover .cover-main>p:last-child a:last-child{background-color:#42b983;background-color:var(--theme-color,#42b983);color:#fff;margin-right:0}section.cover .cover-main>p:last-child a:last-child:hover{color:inherit;opacity:.8}section.cover .cover-main>p:last-child a:hover{color:inherit}section.cover blockquote>p>a{border-bottom:2px solid #42b983;border-bottom:2px solid var(--theme-color,#42b983);transition:color .3s}section.cover blockquote>p>a:hover{color:#42b983;color:var(--theme-color,#42b983)}section.cover.show{display:-webkit-box;display:-ms-flexbox;display:flex}section.cover.has-mask .mask{background-color:#fff;opacity:.8;position:absolute;width:100%;height:100%}.sidebar,body{background-color:#fff}.sidebar{color:#364149}.sidebar li{margin:6px 0 6px 15px}.sidebar ul li a{color:#505d6b;font-size:14px;font-weight:400;overflow:hidden;text-decoration:none;text-overflow:ellipsis;white-space:nowrap}.sidebar ul li a:hover{text-decoration:underline}.sidebar ul li ul{padding:0}.sidebar ul li.active>a{border-right:2px solid;color:#42b983;color:var(--theme-color,#42b983);font-weight:600}.app-sub-sidebar li:before{content:'-';padding-right:4px;float:left}.markdown-preview{background-color:#fff}.markdown-preview h1,.markdown-preview h2,.markdown-preview h3,.markdown-preview h4,.markdown-preview strong{color:#2c3e50;font-weight:600}.markdown-preview a{color:#42b983;color:var(--theme-color,#42b983);font-weight:600}.md-sidebar-toc a{color:#42b983;font-weight:600}.markdown-preview h1{font-size:32px;font-size:2rem;margin:0 0 16px;margin:0 0 1rem}.markdown-preview h2{font-size:28px;font-size:1.75rem;margin:45px 0 12.8px;margin:45px 0 .8rem}.markdown-preview h3{font-size:24px;font-size:1.5rem;margin:40px 0 9.6px;margin:40px 0 .6rem}.markdown-preview h4{font-size:20px;font-size:1.25rem}.markdown-preview h5,.markdown-preview h6{font-size:16px;font-size:1rem}.markdown-preview h6{color:#777}.markdown-preview figure,.markdown-preview p{margin:1.2em 0}.markdown-preview ol,.markdown-preview p,.markdown-preview ul{line-height:25.6px;line-height:1.6rem;word-spacing:.8px;word-spacing:.05rem}.markdown-preview ol,.markdown-preview ul{padding-left:24px;padding-left:1.5rem}.markdown-preview blockquote{border-left:4px solid #42b983;border-left:4px solid var(--theme-color,#42b983);color:#858585;background-color:#f0f0f0;margin:2em 0;padding-left:20px}.markdown-preview blockquote p{font-weight:600;margin-left:0}.markdown-preview iframe{margin:1em 0}.markdown-preview em{color:#7f8c8d}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.markdown-preview a.tag,.markdown-preview a.tag:active,.markdown-preview a.tag:link,.markdown-preview a.tag:visited,.markdown-preview span.tag{display:inline-block;background-color:var(--vscode-badge-background,rgba(127,127,127,.18));color:var(--vscode-badge-foreground,currentColor);border-radius:2em;font-size:.85em;font-weight:500;padding:.05em .55em;line-height:1.5;white-space:nowrap;text-decoration:none;text-shadow:none;box-shadow:none;transition:background-color .12s ease,opacity .12s ease}.markdown-preview a.tag{cursor:pointer}.markdown-preview a.tag:focus,.markdown-preview a.tag:hover{background-color:var(--vscode-badge-background,rgba(127,127,127,.32));color:var(--vscode-badge-foreground,currentColor);opacity:.85;text-decoration:none;outline:0}.markdown-preview .wikilink-embed-content{border-left:3px solid var(--vscode-textBlockQuote-border,rgba(128,128,128,.3));background:var(--vscode-textBlockQuote-background,rgba(128,128,128,.05));margin:.5em 0;padding:.5em .75em;border-radius:0 3px 3px 0}.markdown-preview .wikilink-embed-content.wikilink-embed-error{border-left-color:var(--vscode-errorForeground,#cf222e);color:var(--vscode-errorForeground,#cf222e);font-style:italic;opacity:.8}.markdown-preview .wikilink-embed-content h1:first-child,.markdown-preview .wikilink-embed-content h2:first-child,.markdown-preview .wikilink-embed-content h3:first-child,.markdown-preview .wikilink-embed-content h4:first-child,.markdown-preview .wikilink-embed-content h5:first-child,.markdown-preview .wikilink-embed-content h6:first-child{margin-top:.25em}.markdown-preview .wikilink-embed-content .wikilink-embed-content{margin:.25em 0;padding:.25em .5em}.markdown-preview .block-id{display:none}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<p><a href="../../zarovizsga.html">⬅ Vissza a főoldalra</a></p>
+<h2 id="4-tétel-operációs-rendszerek-fogalma-felépítése-osztályozásuk-fájlok-és-fájlrendszerek-speciális-fájlok-unix-alatt-átirányítás-csővezetékek-folyamatkezelés-jelzések-szignálok-ütemezett-végrehajtás">4. tétel: Operációs rendszerek fogalma, felépítése, osztályozásuk. Fájlok és fájlrendszerek. Speciális fájlok Unix alatt. Átirányítás, csővezetékek. Folyamatkezelés. Jelzések, szignálok. Ütemezett végrehajtás. </h2>
+<h3 id="operációs-rendszerek-fogalma">Operációs rendszerek fogalma </h3>
+<ul>
+<li>
+<p><strong>Alapvető definíció (Közvetítő szerep):</strong></p>
+<ul>
+<li>Egy program, amely a számítógép hardverét kezeli.</li>
+<li>Közvetítő a felhasználó és a hardver között.</li>
+<li>Fő célja: kényelmes és hatékony környezet biztosítása a programok futtatásához.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rendszerszemlélet - Erőforrás-kezelő:</strong></p>
+<ul>
+<li>Az OS feladata a hardveres erőforrások (CPU-idő, memória, fájltároló, I/O eszközök) elosztása.</li>
+<li>Kezeli az egymással versengő folyamatok kéréseit a hatékony és igazságos működés érdekében.</li>
+</ul>
+</li>
+<li>
+<p><strong>Felhasználói / Vezérlési szemlélet - Irányító program:</strong></p>
+<ul>
+<li>Menedzseli és felügyeli a felhasználói programok végrehajtását.</li>
+<li>Fő célja: a szoftveres hibák és a számítógép nem megfelelő használatának megelőzése.</li>
+<li>Felügyeli az I/O eszközök működését és az azokkal való kommunikációt.</li>
+</ul>
+</li>
+</ul>
+<h3 id="számítógépes-rendszer-felépítése">Számítógépes rendszer felépítése </h3>
+<p>Egy számítógépes rendszert absztrakt módon négy fő komponensre bonthatunk:</p>
+<ul>
+<li><strong>Hardver:</strong> A rendszer fizikai erőforrásait biztosítja (CPU, memória, I/O eszközök).</li>
+<li><strong>Operációs rendszer:</strong> Irányítja és koordinálja a hardver használatát az alkalmazások és a felhasználók között. Önmaga nem végez hasznos munkát, csupán absztrakciót és megfelelő környezetet biztosít a programok futtatásához.</li>
+<li><strong>Alkalmazási programok:</strong> Ezek segítségével oldják meg a felhasználók a konkrét problémáikat (pl. szövegszerkesztők, böngészők).</li>
+<li><strong>Felhasználók:</strong> Emberek, gépek vagy akár más számítógépek, amelyek a rendszert használják.</li>
+</ul>
+<p><img src="../../kepek/szamitogepfelepites.png" alt="felepites"></p>
+<h4 id="a-felhasználói-szemszög-user-view">A felhasználói szemszög (User View) </h4>
+<p>A felhasználók elvárásai attól függnek, hogy milyen felületen és környezetben dolgoznak a számítógéppel:</p>
+<ul>
+<li><strong>Személyi számítógépek (PC-k) és mobilok:</strong> Mivel ezeket az eszközöket jellemzően egyetlen felhasználó használja, a fő cél a munka és a játék élményének maximalizálása.
+<ul>
+<li>Számukra a legfontosabb a <strong>teljesítmény</strong> és a <strong>felhasználóbarátság</strong>.</li>
+<li>Az <strong>erőforrás-kihasználtság</strong> – vagyis az, hogy a szoftver- és hardvererőforrások hogyan vannak megosztva – egyáltalán nem érdekli őket, az OS dolga, hogy a hardveres részleteket elrejtse (absztrakció).</li>
+</ul>
+</li>
+<li><strong>Mainframe-ek és miniszámítógépek:</strong> Itt több felhasználó csatlakozik terminálokon keresztül egy közös géphez. Ebben a környezetben az operációs rendszer elsődleges feladata az <strong>erőforrás-kihasználtság optimalizálása</strong>, hogy senki ne kapjon indokolatlanul nagy részt a CPU-ból vagy a memóriából.</li>
+<li><strong>Munkaállomások:</strong> Ezek a rendszerek kompromisszumot kötnek; egyensúlyozniuk kell a dedikált, egyéni teljesítmény biztosítása és a hálózatos erőforrások (pl. fájlszerverek) optimális megosztása között.</li>
+</ul>
+<h3 id="operációs-rendszerek-felépítése">Operációs rendszerek felépítése </h3>
+<p>Az operációs rendszer szolgáltatások és interfészek hierarchikus összessége, amely biztosítja a programok végrehajtásához szükséges környezetet. A szerkezet a felhasználói igényektől halad a hardver felé.</p>
+<ul>
+<li><strong>Felhasználói felület (User Interface):</strong> Az OS legfelső rétege, amely lehetővé teszi a felhasználó számára a rendszerrel való interakciót. Főbb típusai: a parancssoros (CLI), a grafikus (GUI) és a kötegelt (Batch) interfész.</li>
+<li><strong>Rendszerhívások (System Calls):</strong> Ez a réteg képezi a hidat a felhasználói alkalmazások és az OS szolgáltatásai között. Biztosítja az utat a programok számára a kernel funkcióinak eléréséhez.</li>
+<li><strong>Szolgáltatási réteg:</strong> Az OS belső funkcióinak összessége, amely a rendszer hatékonyságát és a felhasználói kényelmet szolgálja (pl. programvégrehajtás, I/O műveletek, fájlrendszer-kezelés, kommunikáció, hibakezelés és erőforrás-elosztás).</li>
+</ul>
+<h2 id="oprendszerfelepiteskepekoprendszerfelepitespng"><img src="../../kepek/oprendszerfelepites.png" alt="oprendszerfelepites"> </h2>
+<h4 id="a-rendszer-központi-összetevői">A rendszer központi összetevői </h4>
+<p><strong>Kernel</strong><br>
+Az operációs rendszer magja, amely a számítógép bekapcsolásától kezdve folyamatosan fut.</p>
+<ul>
+<li>Közvetlenül felügyeli a hardvert.</li>
+<li>Felelős a legkritikusabb feladatokért: folyamatok ütemezése (scheduling), memória-menedzsment és a fájlrendszer fizikai kezelése.</li>
+<li>Biztosítja a folyamatok közötti védelmet és elszigetelést.</li>
+</ul>
+<p><strong>Eszközillesztők (Device Drivers)</strong><br>
+Speciális szoftvermodulok, amelyek a hardvereszközök és az operációs rendszer közötti kommunikációs interfészt valósítják meg.</p>
+<ul>
+<li>Elrejtik a hardver specifikus részleteit a kernel és az alkalmazások elől.</li>
+<li>Lehetővé teszik az I/O műveletek egységes kezelését.</li>
+</ul>
+<p><strong>Felhasználói réteg és alkalmazások</strong><br>
+Az a környezet, ahol a felhasználói programok és a rendszer segédprogramjai futnak.</p>
+<ul>
+<li>Itt történik az alkalmazások (pl. szövegszerkesztők, fordítóprogramok) futtatása.</li>
+<li>Az itt futó programok csak rendszerhívásokon keresztül érhetik el a hardveres erőforrásokat, így garantálva a rendszer stabilitását és biztonságát.</li>
+</ul>
+<h3 id="különböző-operációs-rendszer-felépítések">Különböző operációs rendszer felépítések </h3>
+<h4 id="egyszerű-struktúra">Egyszerű struktúra </h4>
+<p>A legkorábbi operációs rendszereket nem tervezték nagynak és komplexnek, így struktúrájuk is korlátozott.</p>
+<ul>
+<li><strong>Példa (MS-DOS):</strong> Arra tervezték, hogy a lehető legkisebb helyen a legnagyobb funkcionalitást nyújtsa. A modulok nincsenek szigorúan elkülönítve.</li>
+<li><strong>Hiányzó védelem:</strong> Nem támogatja a hardveres dual-mode (felhasználói és kernel mód) elkülönítést. Az alkalmazások közvetlenül hozzáférhetnek az alapvető I/O rutinokhoz és a hardverhez.</li>
+<li><strong>Sebezhetőség:</strong> Mivel nincs védelem, egyetlen meghibásodott felhasználói program könnyen felülírhatja az operációs rendszert, ami az egész gép összeomlásához vezethet. Egyidejűleg csak egy folyamat futását támogatja.</li>
+</ul>
+<hr>
+<h4 id="monolitikus-rendszerek">Monolitikus rendszerek </h4>
+<p>Az operációs rendszer minden funkciója a hardver és a rendszerhívási interfész (system call interface) között helyezkedik el egyetlen nagy blokkban.</p>
+<ul>
+<li><strong>Példa (Eredeti UNIX):</strong> Két fő részre bomlik: rendszerprogramokra és a kernelre. A kernel egyetlen hatalmas program, ami felelős a CPU ütemezésért, a fájlrendszerért, az eszközök kezeléséért stb.</li>
+<li><strong>Előny (Teljesítmény):</strong> Mivel minden egyetlen címtérben (kernel módban) van, a belső kommunikáció és a rendszerhívások rendkívül gyorsak, kevés overhead-del járnak.</li>
+<li><strong>Hátrány:</strong> Az egész rendszer átláthatatlan, nehéz implementálni, bővíteni és karbantartani.</li>
+</ul>
+<hr>
+<h4 id="rétegzett-architektúra">Rétegzett architektúra </h4>
+<p>Az operációs rendszert kisebb, szigorúan meghatározott szintekre (rétegekre) bontják a könnyebb kezelhetőség érdekében.</p>
+<ul>
+<li><strong>Felépítés:</strong> A legalsó réteg (0. réteg) maga a hardver, a legfelső réteg (N. réteg) pedig a felhasználói felület.</li>
+<li><strong>Adatrejtés (Separation of concerns):</strong> Egy adott réteg kizárólag az eggyel alatta lévő réteg szolgáltatásait és funkcióit használhatja fel. A belső adatstruktúrák és hardveres részletek rejtve maradnak a felsőbb szintek elől.</li>
+<li><strong>Előny:</strong> Sokkal egyszerűbb a tervezés és a hibakeresés (debugging). Ha az 1. réteg már tesztelt és működik, akkor a 2. réteg fejlesztésekor felmerülő hiba csakis a 2. rétegből származhat.</li>
+<li><strong>Hátrány:</strong> Alacsonyabb teljesítmény. Egy felhasználói kérésnek több rétegen kell keresztülhaladnia (minden réteghatáron paramétereket kell másolni), mire eléri a hardvert. Nehéz pontosan definiálni a rétegek sorrendjét.</li>
+</ul>
+<hr>
+<h4 id="mikrokernel-architektúra">Mikrokernel architektúra </h4>
+<p>Az operációs rendszer méretének csökkentése a cél: minden nem kritikus komponenst kivesznek a kernelből, és azokat felhasználói szintű (user-space) folyamatokként futtatják.</p>
+<ul>
+<li><strong>Példa:</strong> Mach operációs rendszer.</li>
+<li><strong>A kernel feladata:</strong> A mikrokernel szinte csak a folyamatok közötti kommunikációt (message passing), az alapvető memóriakezelést és a CPU ütemezést végzi.</li>
+<li><strong>Előny (Bővíthetőség és Biztonság):</strong> Nagyon könnyű új szolgáltatásokat hozzáadni (nem kell a kernelt újrafordítani). Ha egy szolgáltatás (például egy videokártya-illesztő) összeomlik, a rendszer többi része érintetlen marad, a gép nem fagy le.</li>
+<li><strong>Hátrány:</strong> Teljesítménycsökkenés. A felhasználói programok és a rendszer-szolgáltatások közötti gyakori üzenetküldés rengeteg kontextusváltást (context switch) és kommunikációs overheadet okoz.</li>
+</ul>
+<hr>
+<h4 id="moduláris-architektúra">Moduláris architektúra </h4>
+<p>A legmodernebb operációs rendszerek a betölthető kernel modulokat használják, amely egy objektumorientált megközelítés.</p>
+<ul>
+<li><strong>Példa (Linux, Solaris):</strong> A kernel csak a legkritikusabb alapfunkciókat tartalmazza, de képes futásidőben (on-demand), igény szerint új modulokat (fájlrendszereket, drivereket) betölteni.</li>
+<li><strong>Hasonlóság a mikrokernellel:</strong> A mag kicsi marad, a funkciók logikailag jól elkülönülnek, és szabványos interfészeken keresztül kommunikálnak.</li>
+<li><strong>Különbség a mikrokerneltől (Teljesítmény):</strong> Itt minden betöltött modul kernel módban (egy közös címtérben) fut, így megmarad a monolitikus rendszerek gyorsasága (nincs üzenetküldési overhead).</li>
+</ul>
+<hr>
+<h4 id="hibrid-rendszerek">Hibrid rendszerek </h4>
+<p>A gyakorlatban egyetlen modern operációs rendszer sem követ tisztán egyetlen modellt; különböző architektúrákat ötvöznek a biztonság, a teljesítmény és a használhatóság egyensúlya érdekében.</p>
+<ul>
+<li><strong>Példa (Windows):</strong> Alapvetően monolitikus a teljesítmény miatt, de mikrokernel vonásokat is mutat azzal, hogy az operációs rendszer "személyiségeit" különálló alrendszerként (subsystem), felhasználói módban futtatja.</li>
+<li><strong>Példa (Apple Mac OS X):</strong> A rendszermag (Darwin) hibrid. Egyrészt tartalmaz egy Mach mikrokernelt (ami a memóriakezelésért, szálakért és IPC-ért felelős), másrészt egy BSD UNIX monolitikus kernelt (ami a POSIX API-t, fájlrendszert és hálózatot biztosítja), ezen felül pedig dinamikusan betölthető modulokat (kexts - I/O Kit) is használ.</li>
+</ul>
+<hr>
+<h3 id="operációs-rendszerek-szolgáltatásai-és-feladatai">Operációs rendszerek szolgáltatásai és feladatai </h3>
+<p>A rendszer zavartalan működése és az erőforrások kezelése érdekében az operációs rendszer az alábbi alapvető feladatokat látja el:</p>
+<ul>
+<li><strong>Folyamatkezelés</strong></li>
+<li><strong>I/O rendszerkezelés</strong></li>
+<li><strong>Memóriakezelés</strong></li>
+<li><strong>Fájlkezelés</strong></li>
+<li><strong>Tárhelykezelés</strong></li>
+<li><strong>Biztonság és védelem</strong></li>
+</ul>
+<hr>
+<h3 id="operációs-rendszerek-osztályozása">Operációs rendszerek osztályozása </h3>
+<p>Az operációs rendszereket számos szempont és környezet alapján kategorizálhatjuk:</p>
+<ul>
+<li><strong>Felhasználók száma szerint:</strong>
+<ul>
+<li>Egyfelhasználós: (pl. DOS)</li>
+<li>Többfelhasználós: (pl. Linux, Windows)</li>
+</ul>
+</li>
+<li><strong>Hardver méret szerint:</strong>
+<ul>
+<li>Mikrogépes: (pl. Windows, Unix alapú PC-k)</li>
+<li>Kisgépes: (pl. Unix)</li>
+<li>Nagygépes (Mainframe): nagyvállalati központi rendszerek</li>
+</ul>
+</li>
+<li><strong>Processzorkezelés szerint:</strong>
+<ul>
+<li>Egyfeladatos: (pl. DOS)</li>
+<li>Többfeladatos (Multitasking): (pl. Unix)</li>
+</ul>
+</li>
+<li><strong>Cél szerint:</strong>
+<ul>
+<li>Általános célú</li>
+<li>Speciális: (pl. beágyazott, valós idejű rendszerek)</li>
+</ul>
+</li>
+<li><strong>Felépítés szerint:</strong>
+<ul>
+<li>Monolitikus: (pl. DOS, eredeti Unix)</li>
+<li>Rétegzett architektúra: (elméleti megközelítés)</li>
+<li>Mikrokernel architektúra: (pl. Mach, MacOS részei)</li>
+<li>Moduláris: (pl. Linux)</li>
+<li>Hibrid: (pl. Windows, Mac OS X)</li>
+</ul>
+</li>
+<li><strong>Felhasználói felület szerint:</strong>
+<ul>
+<li>Szöveges (CLI): (pl. DOS)</li>
+<li>Grafikus (GUI): (pl. Windows)</li>
+</ul>
+</li>
+<li><strong>Jogállás szerint:</strong>
+<ul>
+<li>Nyílt forráskódú: (pl. Linux)</li>
+<li>Zárt forráskódú / Kereskedelmi: (pl. Windows)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="fájlok-fájlrendszerek">Fájlok, fájlrendszerek </h3>
+<h4 id="a-fájl-fogalma">A fájl fogalma </h4>
+<p>A fájl az operációs rendszer szempontjából egy <strong>folytonos logikai címtér</strong>.</p>
+<ul>
+<li>A számítógép a fizikai tárolóeszközök (mágneslemezek, SSD-k stb.) működését absztrahálja egy logikai tárolási egységgé.</li>
+<li>A fájl egymással összefüggő információk névvel ellátott gyűjteménye a másodlagos háttértáron.</li>
+<li>Tartalmazhat adatot (számikus, alfabetikus, alfanumerikus, bináris) vagy programokat (futtatható állományok, forráskódok).</li>
+</ul>
+<h4 id="fájl-attribútumai-file-attributes">Fájl attribútumai (File Attributes) </h4>
+<p>A fájl nevén és adatain kívül az operációs rendszer különféle metaadatokat (attribútumokat) is tárol a fájlról:</p>
+<ul>
+<li><strong>Név (Name):</strong> Az egyetlen olyan információ, amelyet az emberi felhasználó is olvasható formában lát.</li>
+<li><strong>Azonosító (Identifier / ID):</strong> Egy egyedi belső címke (általában egy szám), amely a fájlrendszeren belül azonosítja a fájlt (a felhasználó számára rejtett).</li>
+<li><strong>Típus (Type):</strong> Arra szolgál, hogy a különböző formátumokat (pl. szöveg, futtatható fájl, archívum) támogató rendszerek megfelelően tudják kezelni azokat.</li>
+<li><strong>Hely (Location):</strong> Egy mutató (pointer) az eszközre és a fájl pontos fizikai helyére a tárolón.</li>
+<li><strong>Méret (Size):</strong> A fájl aktuális mérete (bájtban, szavakban vagy blokkokban megadva).</li>
+<li><strong>Jogosultság és védelem (Protection):</strong> Hozzáférés-szabályozási adatok, amelyek meghatározzák, hogy ki végezhet olvasási, írási vagy futtatási műveleteket a fájlon.</li>
+<li><strong>Időbélyegek és felhasználói adatok (Time, date, and user identification):</strong> Létrehozás, utolsó módosítás és utolsó olvasás dátuma; ezek biztonsági, monitorozási és használati statisztikákhoz szükségesek.</li>
+</ul>
+<h4 id="fájlműveletek-file-operations">Fájlműveletek (File Operations) </h4>
+<p>Az operációs rendszer rendszerhívásokat (system calls) biztosít a fájlok kezeléséhez. Az alapvető műveletek a következők:</p>
+<ul>
+<li><strong>Létrehozás (Create):</strong> Hely keresése a fájlrendszerben, majd bejegyzés létrehozása a könyvtárban (directory) az új fájl nevével és helyével.</li>
+<li><strong>Írás (Write):</strong> A fájl nevének és a kiírandó információnak a megadása. A rendszer egy <em>írási mutatót</em> (write pointer) tart karban, hogy tudja, hol tart a művelet.</li>
+<li><strong>Olvasás (Read):</strong> A fájl nevének és annak a memóriablokknak a megadása, ahová a fájl tartalmát be kell tölteni (egy <em>olvasási mutató</em> segítségével).</li>
+<li><strong>Fájlon belüli pozicionálás (Reposition / Seek):</strong> Az olvasási/írási mutató áthelyezése egy adott értékre a fájlon belül. (Ez nem jár I/O művelettel, csak könyvtár/mutató manipulációval).</li>
+<li><strong>Törlés (Delete):</strong> A fájl megkeresése a könyvtárban, a könyvtárbejegyzés törlése, valamint a fájl által elfoglalt lemezterület felszabadítása (visszaadása a szabad területek listájába).</li>
+<li><strong>Csonkolás (Truncate):</strong> A fájl tartalmának teljes törlése, de az attribútumok (pl. név, jogosultságok) megtartása. A fájl hossza ilyenkor nullára (0) csökken.</li>
+</ul>
+<p><strong>Megnyitás és Bezárás (Open / Close):</strong><br>
+Ahhoz, hogy az OS ne keresse meg a fájlt a könyvtárban minden egyes olvasásnál és írásnál, a folyamatoknak használat előtt meg kell nyitniuk a fájlt (<code>open()</code>). Ilyenkor a fájl adatai bekerülnek a memóriában lévő nyitott fájlok táblájába (open-file table). Használat után a fájlt be kell zárni (<code>close()</code>).</p>
+<h4 id="gyakori-fájltípusok-és-kiterjesztések">Gyakori fájltípusok és kiterjesztések </h4>
+<p><img src="../../kepek/filetipus.png" alt="fajltipusok"></p>
+<hr>
+<h3 id="fájlrendszer">Fájlrendszer </h3>
+<h4 id="alapvető-fogalom-és-felépítés">Alapvető fogalom és felépítés </h4>
+<ul>
+<li>A fájlrendszer az operációs rendszer leginkább látható része, amely a háttértárolókon lévő adatok és programok tárolását, elérését és rendszerezését biztosítja.</li>
+<li><strong>Két fő komponensből áll:</strong>
+<ul>
+<li><strong>Fájlok halmaza:</strong> amelyek a tényleges (egymással összefüggő) adatokat tárolják. Maga a fájl az operációs rendszer szemszögéből egy <strong>absztrakt adattípus</strong>.</li>
+<li><strong>Könyvtárstruktúra (Directory structure):</strong> amely rendszerezi a fájlokat, és nyilvántartja a velük kapcsolatos információkat (metaadatokat, attribútumokat és a fizikai helyüket).</li>
+</ul>
+</li>
+</ul>
+<h4 id="működési-elv-szektorok-és-blokkok">Működési elv (Szektorok és blokkok) </h4>
+<ul>
+<li>Az operációs rendszer elvonatkoztat a tárolóeszközök fizikai tulajdonságaitól, és a fájlokat, mint logikai tárolási egységeket képezi le a fizikai médiára.</li>
+<li>A lemezes háttértárak fix méretű egységekkel, úgynevezett <strong>blokkokkal</strong> (fizikai rekordokkal) dolgoznak, amelyek méretét a lemez <strong>szektorainak</strong> mérete határozza meg (jellemzően 512 bájt).</li>
+<li>A fájlrendszer feladata, hogy a logikai adatfolyamot ezekbe a fizikai blokkokba "csomagolja", összekapcsolja őket, és pontosan nyilvántartsa, hogy a lemez melyik blokkja/szektora melyik fájlhoz tartozik (allokációs módszerek, pl. láncolt vagy indexelt allokáció).</li>
+</ul>
+<h4 id="példák-ismert-fájlrendszerekre-a-könyv-alapján">Példák ismert fájlrendszerekre a könyv alapján </h4>
+<ul>
+<li><strong>NTFS / Veritas:</strong> Naplózó (log-based / journaling) fájlrendszerek, amelyek a metaadat-módosításokat egy naplófájlba írják a rendszerösszeomlások utáni gyors és konzisztens helyreállítás érdekében.</li>
+<li><strong>ext3 / ext4:</strong> A Linux leggyakoribb standard fájlrendszerei (az ext3 szintén naplózó).</li>
+<li><strong>ZFS / WAFL:</strong> Fejlett fájlrendszerek, amelyek sosem írják felül a meglévő blokkokat (hanem új blokkba írnak, és frissítik a mutatókat), valamint a ZFS folyamatos ellenőrzőösszegeket (checksum) használ a teljes adatintegritás biztosítására.</li>
+<li><em>(Megjegyzés: A FAT/FAT32 is egy klasszikus, láncolt allokációt használó fájlrendszer, amely egy File Allocation Table-ben tartja nyilván a blokkokat.)</em></li>
+</ul>
+<hr>
+<h3 id="speciális-fájlok-unix-alatt">Speciális fájlok Unix alatt </h3>
+<p>A Unix-alapú rendszerek egyik legfontosabb alapelve, hogy minden erőforrást – legyen az hardver, memória vagy kommunikációs csatorna – egységesen fájlként kezelnek. Ez lehetővé teszi, hogy a rendszer ugyanazokat az alapvető műveleteket (olvasás, írás) használja szinte mindenhez.</p>
+<h4 id="hivatkozások-linkek">Hivatkozások (Linkek) </h4>
+<p>Olyan bejegyzések a fájlrendszerben, amelyek egy már létező fájlra mutatnak.</p>
+<ul>
+<li><strong>Hard link:</strong> Egy fájlhoz rendelt második név. Az adat addig marad meg a lemezen, amíg az összes hozzá tartozó hard linket le nem törlik.</li>
+<li><strong>Symbolic link (Szimbolikus link):</strong> Egy olyan mutató, amely csak az eredeti fájl elérési útvonalát tartalmazza. Ha az eredeti fájlt törlik vagy áthelyezik, a szimbolikus link használhatatlanná válik.</li>
+</ul>
+<h4 id="eszközfájlok-device-files">Eszközfájlok (Device Files) </h4>
+<p>A hardvereszközök a fájlrendszeren keresztül, jellemzően a <code>/dev</code> könyvtárban érhetőek el.</p>
+<ul>
+<li><strong>Karakteres eszközök:</strong> Olyan hardverek, amelyek az adatokat folyamatosan, bájtonként kezelik (például a billentyűzet vagy a terminál).</li>
+<li><strong>Blokkos eszközök:</strong> Olyan tárolóeszközök, amelyek az adatokat rögzített méretű csomagokban, úgynevezett blokkokban mozgatják (például a merevlemezek).</li>
+</ul>
+<h4 id="virtuális-speciális-fájlok">Virtuális speciális fájlok </h4>
+<p>Ezek a fájlok nem fizikai eszközöket képviselnek, hanem a rendszer belső funkcióit látják el:</p>
+<ul>
+<li><strong>/dev/null (Az adatnyelő):</strong> Minden beleírt adatot megsemmisít, olvasáskor pedig azonnal jelzi, hogy a fájl üres. Felesleges kimenetek elnyelésére használatos.</li>
+<li><strong>/dev/random (A véletlengenerátor):</strong> Folyamatosan véletlenszerű bájtokat állít elő, ami elengedhetetlen a titkosítási folyamatokhoz és a biztonságos kulcsok létrehozásához.</li>
+<li><strong>/dev/zero (A nullázó):</strong> Megnyitáskor végtelen mennyiségű nulla (0x00) karaktert szolgáltat. Gyakran használják tárolóterületek alaphelyzetbe állítására vagy üres fájlok létrehozására.</li>
+</ul>
+<h4 id="kommunikációs-fájlok-ipc">Kommunikációs fájlok (IPC) </h4>
+<p>A folyamatok közötti adatcserét segítő speciális állományok:</p>
+<ul>
+<li><strong>Nevesített csővezeték (Named pipe / FIFO):</strong> Olyan átmeneti tároló, amely lehetővé teszi, hogy az egyik program kimenete közvetlenül egy másik program bemenetévé váljon. Az adatok "érkezési sorrendben" (First-In, First-Out) haladnak át rajta.</li>
+<li><strong>Socket (Hálózati végpont):</strong> A hálózaton keresztüli adatforgalom kezelésére szolgáló végpont. Segítségével a különböző gépeken futó alkalmazások úgy tudnak egymással kommunikálni, mintha helyi fájlokat írnának vagy olvasnának.</li>
+</ul>
+<hr>
+<h3 id="io-átirányítás-io-redirection">I/O Átirányítás (I/O Redirection) </h3>
+<p>Az operációs rendszer minden futó folyamat számára három alapvető adatcsatornát (fájlleírót) biztosít. Ezek az úgynevezett szabványos adatfolyamok, amelyek alapértelmezés szerint a terminálhoz kapcsolódnak, de tetszőlegesen átirányíthatók fájlokba vagy más eszközökre.</p>
+<h4 id="alapértelmezett-adatfolyamok">Alapértelmezett adatfolyamok </h4>
+<ol>
+<li><strong>stdin (Standard Input):</strong> Szabványos bemenet (fájlleíró: 0). Alapesetben a billentyűzetről érkező adatokat fogadja.</li>
+<li><strong>stdout (Standard Output):</strong> Szabványos kimenet (fájlleíró: 1). Alapesetben a képernyőre küldi a program normál eredményeit.</li>
+<li><strong>stderr (Standard Error):</strong> Szabványos hibaüzenet-kimenet (fájlleíró: 2). Szintén a képernyőre ír, de a normál kimenettől elkülönítve kezeli a hibajelzéseket.</li>
+</ol>
+<h4 id="átirányítási-műveletek">Átirányítási műveletek </h4>
+<p>Az átirányítás lehetővé teszi, hogy a bemenet ne a billentyűzetről jöjjön, vagy a kimenet ne a képernyőn jelenjen meg, hanem egy fájlba kerüljön.</p>
+<ul>
+<li><strong>Bemenet átirányítása (<code>&lt;</code>):</strong>
+<ul>
+<li><code>parancs &lt; fájl</code>: A program a billentyűzet helyett a megadott fájlból olvassa az adatokat.</li>
+</ul>
+</li>
+<li><strong>Kimenet átirányítása és felülírása (<code>&gt;</code>):</strong>
+<ul>
+<li><code>parancs &gt; fájl</code>: A szabványos kimenetet a fájlba írja. Ha a fájl már létezik, a tartalma törlődik (felülíródik).</li>
+</ul>
+</li>
+<li><strong>Kimenet hozzáfűzése (<code>&gt;&gt;</code>):</strong>
+<ul>
+<li><code>parancs &gt;&gt; fájl</code>: A kimenetet a fájl végéhez írja, megőrizve annak eredeti tartalmát.</li>
+</ul>
+</li>
+<li><strong>Hibaüzenetek átirányítása (<code>2&gt;</code>):</strong>
+<ul>
+<li><code>parancs 2&gt; fájl</code>: Csak a hibaüzeneteket (stderr) irányítja a fájlba, a normál kimenet (stdout) megmarad a képernyőn.</li>
+</ul>
+</li>
+<li><strong>Összevont átirányítás (<code>&amp;&gt;</code>):</strong>
+<ul>
+<li><code>parancs &amp;&gt; fájl</code>: Mind a normál kimenetet, mind a hibaüzeneteket ugyanabba a fájlba menti.</li>
+</ul>
+</li>
+</ul>
+<h4 id="adatfolyamok-összekapcsolása">Adatfolyamok összekapcsolása </h4>
+<p>Gyakran szükséges az egyik adatfolyamot a másikhoz irányítani, hogy közösen kezelhessük őket.</p>
+<ul>
+<li><strong>stderr irányítása az stdout-hoz (<code>2&gt;&amp;1</code>):</strong>
+<ul>
+<li>A hibaüzenetek oda kerülnek, ahová a normál kimenet már irányítva van. Ez hasznos, ha egyetlen fájlba akarunk naplózni mindent.</li>
+</ul>
+</li>
+<li><strong>stdout irányítása az stderr-hez (<code>1&gt;&amp;2</code>):</strong>
+<ul>
+<li>A normál kimenetet a hibaüzenetek csatornájára tereli.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Megjegyzés:</strong> Az átirányításokat az operációs rendszer parancsértelmezője (shell) kezeli a rendszerhívások (mint az <code>open()</code>, <code>close()</code> és <code>dup2()</code>) segítségével, még mielőtt a konkrét program futása elindulna.</p>
+</blockquote>
+<hr>
+<h3 id="csővezetékek--névtelen-vagy-közönséges-csővezetékek">Csővezetékek – Névtelen vagy közönséges csővezetékek </h3>
+<p>A csővezeték az egyik legnépszerűbb módszer a folyamatok közötti kommunikációra. Lehetővé teszi, hogy két folyamat „termelő-fogyasztó” módban dolgozzon együtt: az egyik folyamat kimenete közvetlenül a másik folyamat bemenetévé válik.</p>
+<h4 id="alapvető-tulajdonságok">Alapvető tulajdonságok </h4>
+<ul>
+<li><strong>Egyirányú kommunikáció:</strong> Az adatok csak egy irányba áramlanak. Az egyik végén beírják az adatokat (termelő), a másik végén pedig kiolvassák (fogyasztó).</li>
+<li><strong>Ideiglenes létezés:</strong> A névtelen csővezetékek csak addig léteznek, amíg a benne részt vevő folyamatok futnak. Amint a folyamatok befejeződnek, a csővezeték megszűnik.</li>
+<li><strong>Szülő-gyermek kapcsolat:</strong> Unix-alapú rendszerekben ezeket a csővezetékeket jellemzően olyan folyamatok használják, amelyek szülő-gyermek viszonyban állnak egymással.</li>
+</ul>
+<h4 id="használat-a-parancssorban">Használat a parancssorban </h4>
+<p>A parancssorban (shell) a függőleges vonal (<code>|</code>) szimbólum jelöli a csővezetéket. Segítségével bonyolult műveleteket is elvégezhetünk több egyszerű program összekapcsolásával (láncolás).</p>
+<p><strong>Példák:</strong></p>
+<ul>
+<li><strong><code>dir | sort</code></strong>
+<ul>
+<li>A <code>dir</code> parancs kilistázza a fájlokat, de ahelyett, hogy a képernyőre írná, továbbadja az adatokat a <code>sort</code> programnak, ami sorba rendezi azokat.</li>
+</ul>
+</li>
+<li><strong><code>dir | sort &gt; \temp\lista.txt</code></strong>
+<ul>
+<li>A lista elkészül, a rendezés megtörténik, majd a végeredmény nem a képernyőn jelenik meg, hanem elmentődik a <code>lista.txt</code> fájlba.</li>
+</ul>
+</li>
+<li><strong><code>dir | sort | more</code></strong>
+<ul>
+<li>Itt három program van összekötve: a lista elkészül, sorba rendeződik, a <code>more</code> parancs pedig gondoskodik róla, hogy a végeredményt oldalanként (olvasható ütemben) lássuk.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Lényege:</strong> A csővezetékek segítségével elkerülhető, hogy minden lépés után ideiglenes fájlokba kelljen menteni az adatokat; az információ folyamatosan áramlik egyik programtól a másikig.</p>
+</blockquote>
+<hr>
+<h3 id="folyamatkezelés">Folyamatkezelés </h3>
+<h4 id="folyamat">Folyamat </h4>
+<p>A folyamat alapvető definíciója szerint egy <strong>végrehajtás alatt álló program</strong>. Míg a program egy passzív entitás (például egy fájl a háttértáron), addig a folyamat egy aktív entitás, amely rendelkezik egy utasításszámlálóval (program counter), ami meghatározza a következő végrehajtandó utasítást.</p>
+<p><strong>Egy program, több folyamat:</strong><br>
+Fontos különbséget tenni a program és a folyamat között. Egy program (például egy böngésző) önmagában csak egy fájl, de ha többször indítjuk el, minden példánya külön folyamatnak minősül, saját belső állapottal.</p>
+<h4 id="a-folyamat-memóriaszerkezete">A folyamat memóriaszerkezete </h4>
+<p>Egy folyamat a memóriában több jól elkülöníthető részből (szegmensből) áll:</p>
+<ul>
+<li><strong>Text szegmens:</strong> Itt található a tényleges programkód (utasítások).</li>
+<li><strong>Adatszegmens (Data section):</strong> Itt tárolódnak a globális változók.</li>
+<li><strong>Stack (Verem):</strong> Ideiglenes adatokat tárol, például függvényparamétereket, visszatérési címeket és lokális változókat.</li>
+<li><strong>Heap (Halom):</strong> Dinamikusan, a program futása közben lefoglalt memóriaterület.</li>
+</ul>
+<h4 id="folyamatállapotok-process-states">Folyamatállapotok (Process States) </h4>
+<p>Ahogy egy folyamat végrehajtódik, változik az állapota. A könyv öt alapvető állapotot különít el:</p>
+<ol>
+<li><strong>Új (New):</strong> A folyamat éppen létrehozás alatt áll.</li>
+<li><strong>Futó (Running):</strong> Az utasítások végrehajtása zajlik a CPU-ban.</li>
+<li><strong>Várakozó (Waiting / Blocked):</strong> A folyamat valamilyen eseményre vár (például egy I/O művelet befejeződésére vagy egy jelre).</li>
+<li><strong>Készen álló (Ready):</strong> A folyamat várakozik, hogy hozzárendeljék egy processzorhoz.</li>
+<li><strong>Befejezett (Terminated):</strong> A folyamat befejezte a végrehajtást.</li>
+</ol>
+<p><img src="../../kepek/folyamatok.png" alt="folyamatok"></p>
+<h4 id="folyamatvezérlő-blokk-pcb---process-control-block">Folyamatvezérlő blokk (PCB - Process Control Block) </h4>
+<p>Az operációs rendszer minden egyes folyamatot egy <strong>Process Control Block</strong> (más néven Task Control Block) segítségével reprezentál. Ez egy olyan adattábla, amely minden fontos információt tartalmaz a folyamat kezeléséhez:</p>
+<ul>
+<li><strong>Folyamat állapota:</strong> (Új, kész, futó stb.)</li>
+<li><strong>Utasításszámláló (Program counter):</strong> A következő végrehajtandó utasítás címe.</li>
+<li><strong>CPU regiszterek:</strong> Itt menti el a rendszer a processzor belső állapotát, amikor a folyamatot félbeszakítják, hogy később onnan folytathassa, ahol abbahagyta.</li>
+<li><strong>CPU-ütemezési információk:</strong> Prioritás, sorban állási mutatók.</li>
+<li><strong>Memóriakezelési információk:</strong> A folyamathoz tartozó laptáblák vagy szegmenstáblák adatai.</li>
+<li><strong>Elszámolási információk:</strong> CPU-használati idő, időkorlátok, folyamatazonosító (PID).</li>
+<li><strong>I/O állapotinformációk:</strong> A folyamat által megnyitott fájlok listája és a lefoglalt I/O eszközök.</li>
+</ul>
+<p><img src="../../kepek/pcb.png" alt="pcb"></p>
+<h4 id="folyamathierarchia-process-hierarchy">Folyamathierarchia (Process Hierarchy) </h4>
+<p>A folyamatok az operációs rendszerekben (különösen a Unix-alapú rendszerekben) egy jól definiált fa-struktúrát alkotnak. Minden folyamatot egy egyedi szám, a <strong>folyamatazonosító (PID)</strong> azonosít.</p>
+<ul>
+<li><strong>Szülő-gyermek viszony:</strong> Minden folyamatnak pontosan egy szülője van (aki létrehozta), de egy folyamatnak több gyermeke is lehet.</li>
+<li><strong>Az ősfolyamat (<code>init</code>):</strong> A rendszer indulásakor jövő létre a legelső folyamat, az <code>init</code> (modern rendszereken gyakran <code>systemd</code>). Ennek a <strong>PID-je mindig 1</strong>. Minden más felhasználói folyamat közvetve vagy közvetlenül az <code>init</code> leszármazottja.</li>
+</ul>
+<h4 id="speciális-folyamatállapotok">Speciális folyamatállapotok </h4>
+<p>A folyamatok életciklusa során előfordulhatnak olyan állapotok, amikor a folyamat már nem végez munkát, de még jelen van a rendszerben.</p>
+<ul>
+<li><strong>Zombi folyamat (Zombie process):</strong> Olyan folyamat, amely már befejezte a futását (terminált), de a szülő folyamata még nem kérdezte le a kilépési állapotát. Ilyenkor a folyamat adatai törlődnek, de a bejegyzése a folyamattáblában megmarad, amíg a szülő el nem olvassa azt.</li>
+<li><strong>Árva folyamat (Orphan process):</strong> Ha egy szülő folyamat hamarabb fejeződik be, mint a gyermekei, a gyermekek "árván" maradnak.
+<ul>
+<li><strong>Örökbefogadás:</strong> Az operációs rendszer ezt úgy kezeli, hogy az árva folyamatokat az <code>init</code> (PID 1) folyamathoz rendeli hozzá (az <code>init</code> lesz az új szülőjük). Az <code>init</code> rendszeresen ellenőrzi ezeket, és gondoskodik a szabályos lezárásukról.</li>
+</ul>
+</li>
+</ul>
+<h4 id="végrehajtási-módok">Végrehajtási módok </h4>
+<p>A folyamatok futhatnak különböző módon, attól függően, hogy a felhasználó közvetlenül látja-e őket:</p>
+<ul>
+<li><strong>Előtérben (Foreground):</strong> A folyamat lefoglalja a terminált/felhasználói felületet, várni kell a befejezésére.</li>
+<li><strong>Háttérben (Background):</strong> A folyamat a háttérben fut, miközben a felhasználó tovább tud dolgozni más programokkal.</li>
+</ul>
+<h4 id="folyamatok-kezelése-parancsokkal-unixlinux">Folyamatok kezelése parancsokkal (Unix/Linux) </h4>
+<p>A könyv és a gyakorlat több eszközt is említ a folyamatok monitorozására:</p>
+<ul>
+<li><strong><code>ps</code>:</strong> Kilistázza az aktuálisan futó folyamatokat és azok adatait (pl. PID, memória- és CPU-használat).</li>
+<li><strong><code>pstree</code>:</strong> Vizuálisan, fa-szerkezetben jeleníti meg a folyamatok közötti szülő-gyermek hierarchiát.</li>
+<li><strong><code>top</code>:</strong> Valós idejű listát ad a legtöbb erőforrást fogyasztó folyamatokról.</li>
+</ul>
+<hr>
+<h3 id="jelzések--szignálok">Jelzések / Szignálok </h3>
+<p>A szignál egy szoftveres megszakítás, amellyel a rendszer értesíti a folyamatot, hogy egy adott esemény bekövetkezett. Linux alatt kb. 60-féle szignál létezik (szabványos és valós idejűek).</p>
+<ul>
+<li><strong>Működése:</strong> Amikor egy szignál megérkezik, a folyamat vagy végrehajtja az alapértelmezett műveletet (pl. leállás), vagy egy saját jelkezelő függvénnyel (signal handler) reagál rá.</li>
+<li><strong>Példák billentyűzetről:</strong>
+<ul>
+<li><code>Ctrl+C</code> (SIGINT): Megszakítja a folyamatot.</li>
+<li><code>Ctrl+Z</code> (SIGSTP): Megállítja (felfüggeszti) a folyamatot.</li>
+</ul>
+</li>
+<li><strong>A <code>kill</code> parancs:</strong> Neve ellenére nemcsak terminálásra jó. PID alapján bármilyen szignált küldhetünk vele egy folyamatnak (például a <code>kill -9</code> azonnali, kényszerített leállítást jelent).</li>
+</ul>
+<hr>
+<h3 id="ütemezett-végrehajtás-linux">Ütemezett végrehajtás (Linux) </h3>
+<p>Linux rendszereken lehetőség van parancsok késleltetett vagy rendszeres futtatására:</p>
+<ul>
+<li><strong>at:</strong> Egyszeri végrehajtást tesz lehetővé egy meghatározott jövőbeli időpontban.</li>
+<li><strong>crontab:</strong> Ismétlődő feladatok ütemezésére szolgál. Egy táblázatban rögzíthető, hogy melyik parancs milyen időközönként (naponta, hetente stb.) fusson le.</li>
+</ul>
+<hr>
+<h3 id="cpu-ütemezés-cpu-scheduling">CPU ütemezés (CPU Scheduling) </h3>
+<p>A modern operációs rendszerek célja a <strong>multiprogramozás</strong>, azaz a CPU kihasználtságának maximalizálása. Mivel a folyamatok gyakran várnak I/O műveletre, az ütemező ilyenkor átadja a CPU-t egy másik folyamatnak.</p>
+<h4 id="mikor-dönt-az-ütemező">Mikor dönt az ütemező? </h4>
+<p>Az ütemezési döntések négy esetben születnek:</p>
+<ol>
+<li><strong>Futó -&gt; Várakozó:</strong> (pl. I/O kérésnél) – <em>Nem-preemptív.</em></li>
+<li><strong>Futó -&gt; Kész:</strong> (pl. megszakítás, időszelet lejárta) – <em>Preemptív.</em></li>
+<li><strong>Várakozó -&gt; Kész:</strong> (pl. I/O befejeződött) – <em>Preemptív.</em></li>
+<li><strong>Befejezés (Terminate):</strong> – <em>Nem-preemptív.</em></li>
+</ol>
+<p>Az ütemezési döntések aszerint csoportosíthatók, hogy az operációs rendszernek van-e joga "erőszakkal" elvenni a processzort egy futó folyamattól, vagy meg kell várnia, amíg a folyamat magától lemond róla.</p>
+<h4 id="nem-preemptív-vagy-kooperatív-ütemezés">Nem preemptív (vagy kooperatív) ütemezés </h4>
+<p>Ebben a modellben, ha egy folyamat megkapta a CPU-t, addig birtokolja azt, amíg:</p>
+<ul>
+<li>Befejezi a futását (<strong>Terminated</strong> állapot).</li>
+<li>Várakozó állapotba kerül (<strong>Waiting</strong>), például egy I/O művelet miatt.</li>
+</ul>
+<p><strong>Jellemzői:</strong></p>
+<ul>
+<li>A folyamat "önként" adja vissza a vezérlést az operációs rendszernek.</li>
+<li><strong>Előnye:</strong> Egyszerű a megvalósítása, nincsenek versenyhelyzetek (race conditions) az osztott adatoknál, mert egy folyamatot nem szakítanak félbe adatfeldolgozás közben.</li>
+<li><strong>Hátránya:</strong> Egy hibás, végtelen ciklusba került program teljesen lebéníthatja a rendszert, mivel az OS nem tudja visszavenni a CPU-t. (Régebbi rendszerek, mint a Windows 3.1 használták).</li>
+</ul>
+<h4 id="preemptív-ütemezés">Preemptív ütemezés </h4>
+<p>A modern operációs rendszerek (Linux, Windows, macOS) szinte kivétel nélkül ilyenek. Az ütemező bármikor megszakíthatja a folyamat futását, hogy a CPU-t egy másik folyamatnak adja.</p>
+<p><strong>Jellemzői:</strong></p>
+<ul>
+<li>Akkor fordul elő, amikor egy folyamat <strong>Futó -&gt; Kész</strong> állapotba kerül (például lejárt az időkerete/timeslice), vagy egy <strong>Várakozó -&gt; Kész</strong> állapotba (például befejeződött egy I/O művelet és egy fontosabb folyamat várt rá).</li>
+<li><strong>Előnye:</strong> Jobb válaszidőt és igazságosabb erőforrás-elosztást biztosít. Megakadályozza, hogy egy folyamat kisajátítsa a processzort.</li>
+<li><strong>Kihívások:</strong>
+<ul>
+<li><strong>Osztott adatok:</strong> Ha a folyamatot akkor szakítják félbe, amikor épp egy közös adatstruktúrát módosít, az adatok inkonzisztenssé válhatnak.</li>
+<li><strong>Kernel mód:</strong> Kritikus kérdés, hogy mi történik, ha a folyamat éppen egy rendszerhívást hajt végre (kernel módban van), amikor a preempció történne. A legtöbb modern OS már "preemptible kernel"-lel rendelkezik, ami lehetővé teszi a biztonságos váltást ilyenkor is.</li>
+</ul>
+</li>
+</ul>
+<h4 id="dispatcher-kiosztó">Dispatcher (Kiosztó) </h4>
+<p>A dispatcher az a modul, amely ténylegesen átadja a CPU vezérlését a rövid távú ütemező által kiválasztott folyamatnak.</p>
+<ul>
+<li><strong>Feladatai:</strong>
+<ul>
+<li>Kontextus-váltás (Context switch): aktuális állapot mentése, új betöltése.</li>
+<li>Váltás felhasználói módba (User mode).</li>
+<li>Ugrás a program megfelelő helyére a folytatáshoz.</li>
+</ul>
+</li>
+<li><strong>Dispatch Latency:</strong> Az az idő, amíg a dispatcher megállítja az egyik folyamatot és elindítja a másikat. Ennek a lehető legrövidebbnek kell lennie.</li>
+</ul>
+<h4 id="ütemezési-szempontok-criteria">Ütemezési szempontok (Criteria) </h4>
+<p>Az algoritmusok jóságát az alábbi mutatókkal mérjük:</p>
+<ul>
+<li><strong>CPU kihasználtság (CPU utilization):</strong> A CPU-t a lehető legfoglaltabbá kell tenni (ideális esetben 40-90%).</li>
+<li><strong>Áteresztőképesség (Throughput):</strong> Egységnyi idő alatt befejezett folyamatok száma.</li>
+<li><strong>Körülfordulási idő (Turnaround time):</strong> Egy folyamat elindítása és befejezése között eltelt összes idő.</li>
+<li><strong>Várakozási idő (Waiting time):</strong> Az az idő, amit a folyamat a kész sorban (ready queue) várakozással töltött.</li>
+<li><strong>Válaszidő (Response time):</strong> Az első kéréstől az első válasz megérkezéséig eltelt idő (interaktív rendszereknél kritikus).</li>
+</ul>
+<h3 id="cpu-ütemezési-algoritmusok">CPU-ütemezési algoritmusok </h3>
+<p>Az ütemező feladata eldönteni, hogy a „készen álló” (ready) folyamatok közül melyik kapja meg a processzort. A választáshoz különböző stratégiákat használhat:</p>
+<ul>
+<li>
+<p><strong>First-Come, First-Served (FCFS):</strong></p>
+<ul>
+<li>A legegyszerűbb módszer: aki előbb érkezik, az kapja meg a CPU-t.</li>
+<li><strong>Probléma:</strong> Konvoj-effektus alakulhat ki, amikor egy hosszú folyamat feltartja az összes utána érkező rövidebbet, ami magas várakozási időt eredményez.</li>
+</ul>
+</li>
+<li>
+<p><strong>Shortest-Job-First (SJF):</strong></p>
+<ul>
+<li>Mindig azt a feladatot választja, amelyiknek a legrövidebb a következő CPU-igénye (löketideje).</li>
+<li>Ez adja a legkisebb átlagos várakozási időt.</li>
+<li><strong>Nehézség:</strong> Előre nehéz pontosan megmondani, mennyi ideig fog futni egy program, ezért ezt becsülni kell.</li>
+<li>Létezik preemptív változata is: ha érkezik egy rövidebb feladat, mint ami éppen fut, az OS félbeszakítja a futót.</li>
+</ul>
+</li>
+<li>
+<p><strong>Round Robin (RR):</strong></p>
+<ul>
+<li>Kifejezetten időosztásos rendszerekhez készült, igazságos elosztást biztosít.</li>
+<li>Minden folyamat kap egy kis időegységet (időszelet / time quantum). Ha ez letelik, a folyamatot félbeszakítják, és a sor végére kerül, a CPU-t pedig a következő folyamat kapja meg.</li>
+<li><strong>Fontos:</strong> Ha az időszelet túl nagy, az FCFS-szerűvé válik. Ha túl kicsi, a rengeteg folyamatváltás (kontextus-váltás) felemészti a gép teljesítményét.</li>
+</ul>
+</li>
+<li>
+<p><strong>Prioritásos ütemezés (Priority Scheduling):</strong></p>
+<ul>
+<li>Minden folyamat kap egy számot (prioritást), és a legmagasabb kapja meg először a CPU-t.</li>
+<li><strong>Starvation (Kiéheztetés):</strong> Az alacsony prioritású feladatok lehet, hogy soha nem kerülnek sorra, ha mindig jön egy fontosabb.</li>
+<li><strong>Aging (Öregítés):</strong> Megoldás a kiéheztetésre; minél régebb óta vár egy folyamat, annál feljebb tolják a prioritását.</li>
+</ul>
+</li>
+<li>
+<p><strong>Többszintű sorok (Multilevel Queue):</strong></p>
+<ul>
+<li>A folyamatokat különböző csoportokba (sorokba) osztják (pl. interaktív programok vs. háttérben futó számítások).</li>
+<li>Minden sornak saját ütemezési szabálya lehet (pl. a felső sor RR, az alsó FCFS).</li>
+<li>A <strong>Multilevel Feedback Queue</strong> esetén a folyamatok mozoghatnak is a sorok között (pl. ha egy program túl sokáig használja a CPU-t, "megbüntetik" és egy alacsonyabb prioritású sorba teszik).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="többprocesszoros-ütemezés-multiple-processor-scheduling">Többprocesszoros ütemezés (Multiple-Processor Scheduling) </h3>
+<p>Ha több CPU is van a gépben, az ütemezés sokkal bonyolultabb:</p>
+<ul>
+<li><strong>Processzor-affinitás:</strong> A rendszer igyekszik egy folyamatot ugyanazon a processzoron tartani, ahol korábban futott, mert annak gyorsítótárában (cache) már ott lehetnek az adatai. A költöztetés lassítaná a gépet.</li>
+<li><strong>Load Balancing (Terheléselosztás):</strong> Figyelni kell, hogy minden CPU-nak legyen munkája.
+<ul>
+<li><em>Push migration:</em> Egy ellenőr folyamat "átnyomja" a munkát a túlterhelt CPU-ról az üresre.</li>
+<li><em>Pull migration:</em> Az üres CPU "elhúzza" magához a várakozó feladatot másoktól.</li>
+</ul>
+</li>
+<li><strong>Típusok:</strong>
+<ul>
+<li><em>Aszimmetrikus (AMP):</em> Egy "főnök" processzor osztja szét a munkát a többinek.</li>
+<li><em>Szimmetrikus (SMP):</em> Minden processzor önállóan dönt, és saját maga ütemezi a feladatokat egy közös listából.</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
