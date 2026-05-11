@@ -1,0 +1,558 @@
+<!DOCTYPE html><html><head>
+      <title>08</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600);
+*{-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;-webkit-touch-callout:none;box-sizing:border-box}.markdown-preview code{border-radius:2px;color:#e96900;font-size:12.8px;font-size:.8rem;margin:0 2px;padding:3px 5px;white-space:pre-wrap}.markdown-preview code,.markdown-preview pre{background-color:#f8f8f8;font-family:Roboto Mono,Monaco,courier,monospace}.markdown-preview pre{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;line-height:24px;line-height:1.5rem;margin:1.2em 0;overflow:auto;padding:0 22.4px;padding:0 1.4rem;position:relative;word-wrap:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8e908c}.token.namespace{opacity:.7}.token.boolean,.token.number{color:#c76b29}.token.punctuation{color:#525252}.token.property{color:#c08b30}.token.tag{color:#2973b7}.token.string{color:#42b983;color:var(--theme-color,#42b983)}.token.selector{color:#6679cc}.token.attr-name{color:#2973b7}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#22a2c9}.token.attr-value,.token.control,.token.directive,.token.unit{color:#42b983;color:var(--theme-color,#42b983)}.token.keyword{color:#e96900}.token.atrule,.token.regex,.token.statement{color:#22a2c9}.token.placeholder,.token.variable{color:#3d8fd1}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #202746;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#c94922}.token.entity{cursor:help}.markdown-preview pre>code,.markdown-preview pre[class*=language]{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;background-color:#f8f8f8;border-radius:2px;color:#525252;display:block;font-family:Roboto Mono,Monaco,courier,monospace;font-size:12.8px;font-size:.8rem;line-height:2em;max-width:inherit;overflow:inherit;padding:.8em 1.4em;white-space:pre}.markdown-preview pre>code{padding-left:0;padding-right:0}.markdown-preview code:after,.markdown-preview code:before{letter-spacing:.8px;letter-spacing:.05rem}code .token{-moz-osx-font-smoothing:initial;-webkit-font-smoothing:initial;min-height:24px;min-height:1.5rem}pre:after{color:#ccc;content:attr(data-lang);font-size:9.6px;font-size:.6rem;font-weight:600;height:15px;line-height:15px;padding:5px 10px 0;position:absolute;right:0;text-align:right;top:0}pre[data-line]{position:relative;padding:1em 0 1em 3em!important}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}*{-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;-webkit-touch-callout:none;box-sizing:border-box}div#app{font-size:30px;font-weight:lighter;margin:40vh auto;text-align:center}div#app:empty:before{content:'Loading...'}.emoji{height:19.2px;height:1.2rem;vertical-align:middle}.progress{background-color:#42b983;background-color:var(--theme-color,#42b983);height:2px;left:0;position:fixed;right:0;top:0;transition:width .2s,opacity .4s;width:0;z-index:5}.search .search-keyword,.search a:hover{color:#42b983;color:var(--theme-color,#42b983)}.search .search-keyword{font-style:normal;font-weight:700}body,html{height:100%}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:#34495e;font-family:Source Sans Pro,Helvetica Neue,Arial,sans-serif;font-size:15px;letter-spacing:0;margin:0;overflow-x:hidden}img{max-width:100%}a[disabled]{cursor:not-allowed;opacity:.6}kbd{color:#34495e;border:1px solid #ccc;border-radius:3px;display:inline-block;font-size:12px!important;line-height:12px;margin-bottom:3px;padding:3px 5px;vertical-align:middle}.task-list-item{list-style-type:none}li input[type=checkbox]{margin:0 .2em .25em -1.6em;vertical-align:middle}.app-nav{left:0;margin:25px 60px 0 0;position:absolute;right:0;text-align:right;z-index:2}.app-nav p{margin:0}.app-nav>a{margin:0 16px;margin:0 1rem;padding:5px 0}.app-nav li,.app-nav ul{display:inline-block;list-style:none;margin:0}.app-nav a{color:inherit;font-size:16px;text-decoration:none;transition:color .3s}.app-nav a.active,.app-nav a:hover{color:#42b983;color:var(--theme-color,#42b983)}.app-nav a.active{border-bottom:2px solid #42b983;border-bottom:2px solid var(--theme-color,#42b983)}.app-nav li{display:inline-block;margin:0 16px;margin:0 1rem;padding:5px 0;position:relative}.app-nav li ul{background-color:#fff;border:1px solid #ddd;border-bottom-color:#ccc;border-radius:4px;box-sizing:border-box;display:none;max-height:calc(100vh - 61px);overflow-y:scroll;padding:10px 0;position:absolute;right:-15px;text-align:left;top:100%;white-space:nowrap}.app-nav li ul li{display:block;font-size:14px;line-height:16px;line-height:1rem;margin:0;margin:8px 14px;white-space:nowrap}.app-nav li ul a{display:block;font-size:inherit;margin:0;padding:0}.app-nav li ul a.active{border-bottom:0}.app-nav li:hover ul{display:block}.app-nav.no-badge{margin-right:25px}.github-corner{border-bottom:0;position:fixed;right:0;text-decoration:none;top:0;z-index:1}.github-corner svg{color:#fff;fill:#42b983;fill:var(--theme-color,#42b983);height:80px;width:80px}.github-corner:hover .octo-arm{-webkit-animation:a .56s ease-in-out;animation:a .56s ease-in-out}main{display:block;position:relative;width:100vw;height:100%;z-index:0}.anchor{display:inline-block;text-decoration:none;transition:all .3s}.anchor span{color:#34495e}.anchor:hover{text-decoration:underline}.sidebar{border-right:1px solid rgba(0,0,0,.07);overflow-y:auto;padding:40px 0 0;top:0;bottom:0;left:0;position:absolute;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out;width:300px;z-index:3}.sidebar>h1{margin:0 auto 16px;margin:0 auto 1rem;font-size:24px;font-size:1.5rem;font-weight:300;text-align:center}.sidebar>h1 a{color:inherit;text-decoration:none}.sidebar>h1 .app-nav{display:block;position:static}.sidebar .sidebar-nav{line-height:2em;padding-bottom:40px}.sidebar ul{margin:0;padding:0}.sidebar li>p{font-weight:700;margin:0}.sidebar ul,.sidebar ul li{list-style:none}.sidebar ul li a{border-bottom:none;display:block}.sidebar ul li ul{padding-left:20px}.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-thumb{background:0 0;border-radius:4px}.sidebar:hover::-webkit-scrollbar-thumb{background:hsla(0,0%,53%,.4)}.sidebar:hover::-webkit-scrollbar-track{background:hsla(0,0%,53%,.1)}.sidebar-toggle{background-color:transparent;background-color:hsla(0,0%,100%,.8);border:0;outline:0;padding:10px;bottom:0;left:0;position:absolute;text-align:center;transition:opacity .3s;width:30px;width:284px;z-index:4}.sidebar-toggle .sidebar-toggle-button:hover{opacity:.4}.sidebar-toggle span{background-color:#42b983;background-color:var(--theme-color,#42b983);display:block;margin-bottom:4px;width:16px;height:2px}body.sticky .sidebar,body.sticky .sidebar-toggle{position:fixed}.content{padding-top:60px;top:0;right:0;bottom:0;left:300px;position:absolute;transition:left .25s ease}.markdown-preview>*{box-sizing:border-box;font-size:inherit}.markdown-preview>:first-child{margin-top:0!important}.markdown-preview hr{border:none;border-bottom:1px solid #eee;margin:2em 0}.markdown-preview table{border-collapse:collapse;border-spacing:0;display:block;margin-bottom:16px;margin-bottom:1rem;overflow:auto;width:100%}.markdown-preview th{font-weight:700}.markdown-preview td,.markdown-preview th{border:1px solid #ddd;padding:6px 13px}.markdown-preview tr{border-top:1px solid #ccc}.markdown-preview p.tip,.markdown-preview tr:nth-child(2n){background-color:#f8f8f8}.markdown-preview p.tip{border-bottom-right-radius:2px;border-left:4px solid #f66;border-top-right-radius:2px;margin:2em 0;padding:12px 24px 12px 30px;position:relative}.markdown-preview p.tip code{background-color:#efefef}.markdown-preview p.tip em{color:#34495e}.markdown-preview p.tip:before{background-color:#f66;border-radius:100%;color:#fff;content:'!';font-family:Dosis,Source Sans Pro,Helvetica Neue,Arial,sans-serif;font-size:14px;font-weight:700;left:-12px;line-height:20px;position:absolute;width:20px;height:20px;text-align:center;top:14px}.markdown-preview p.warn{background:rgba(66,185,131,.1);border-radius:2px;padding:16px;padding:1rem}body.close .sidebar{-webkit-transform:translateX(-300px);transform:translateX(-300px)}body.close .sidebar-toggle{width:auto}body.close .content{left:0}@media print{.app-nav,.github-corner,.sidebar,.sidebar-toggle{display:none}}@media screen and (max-width:768px){.github-corner,.sidebar,.sidebar-toggle{position:fixed}.app-nav{margin-top:16px}.app-nav li ul{top:30px}main{height:auto;overflow-x:hidden}.sidebar{left:-300px;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.content{left:0;max-width:100vw;position:static;padding-top:20px;transition:-webkit-transform .25s ease;transition:transform .25s ease;transition:transform .25s ease,-webkit-transform .25s ease}.app-nav,.github-corner{transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.sidebar-toggle{background-color:transparent;width:auto;padding:30px 30px 10px 10px}body.close .sidebar{-webkit-transform:translateX(300px);transform:translateX(300px)}body.close .sidebar-toggle{background-color:hsla(0,0%,100%,.8);transition:background-color 1s;width:284px;padding:10px}body.close .content{-webkit-transform:translateX(300px);transform:translateX(300px)}body.close .app-nav,body.close .github-corner{display:none}.github-corner .octo-arm{-webkit-animation:a .56s ease-in-out;animation:a .56s ease-in-out}.github-corner:hover .octo-arm{-webkit-animation:none;animation:none}}@-webkit-keyframes a{0%,to{-webkit-transform:rotate(0);transform:rotate(0)}20%,60%{-webkit-transform:rotate(-25deg);transform:rotate(-25deg)}40%,80%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}}@keyframes a{0%,to{-webkit-transform:rotate(0);transform:rotate(0)}20%,60%{-webkit-transform:rotate(-25deg);transform:rotate(-25deg)}40%,80%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}}section.cover{-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-position:50%;background-repeat:no-repeat;background-size:cover;height:100vh;display:none}section.cover .cover-main{-webkit-box-flex:1;-ms-flex:1;flex:1;margin:-20px 16px 0;text-align:center;z-index:1}section.cover a{color:inherit}section.cover a,section.cover a:hover{text-decoration:none}section.cover p{line-height:24px;line-height:1.5rem;margin:1em 0}section.cover h1{color:inherit;font-size:40px;font-size:2.5rem;font-weight:300;margin:10px 0 40px;margin:.625rem 0 2.5rem;position:relative;text-align:center}section.cover h1 a{display:block}section.cover h1 small{bottom:-7px;bottom:-.4375rem;font-size:16px;font-size:1rem;position:absolute}section.cover blockquote{font-size:24px;font-size:1.5rem;text-align:center}section.cover ul{line-height:1.8;list-style-type:none;margin:1em auto;max-width:500px;padding:0}section.cover .cover-main>p:last-child a{border-color:#42b983;border:1px solid var(--theme-color,#42b983);border-radius:2rem;box-sizing:border-box;color:#42b983;color:var(--theme-color,#42b983);display:inline-block;font-size:16.8px;font-size:1.05rem;letter-spacing:1.6px;letter-spacing:.1rem;margin-right:16px;margin-right:1rem;padding:.75em 32px;padding:.75em 2rem;text-decoration:none;transition:all .15s ease}section.cover .cover-main>p:last-child a:last-child{background-color:#42b983;background-color:var(--theme-color,#42b983);color:#fff;margin-right:0}section.cover .cover-main>p:last-child a:last-child:hover{color:inherit;opacity:.8}section.cover .cover-main>p:last-child a:hover{color:inherit}section.cover blockquote>p>a{border-bottom:2px solid #42b983;border-bottom:2px solid var(--theme-color,#42b983);transition:color .3s}section.cover blockquote>p>a:hover{color:#42b983;color:var(--theme-color,#42b983)}section.cover.show{display:-webkit-box;display:-ms-flexbox;display:flex}section.cover.has-mask .mask{background-color:#fff;opacity:.8;position:absolute;width:100%;height:100%}.sidebar,body{background-color:#fff}.sidebar{color:#364149}.sidebar li{margin:6px 0 6px 15px}.sidebar ul li a{color:#505d6b;font-size:14px;font-weight:400;overflow:hidden;text-decoration:none;text-overflow:ellipsis;white-space:nowrap}.sidebar ul li a:hover{text-decoration:underline}.sidebar ul li ul{padding:0}.sidebar ul li.active>a{border-right:2px solid;color:#42b983;color:var(--theme-color,#42b983);font-weight:600}.app-sub-sidebar li:before{content:'-';padding-right:4px;float:left}.markdown-preview{background-color:#fff}.markdown-preview h1,.markdown-preview h2,.markdown-preview h3,.markdown-preview h4,.markdown-preview strong{color:#2c3e50;font-weight:600}.markdown-preview a{color:#42b983;color:var(--theme-color,#42b983);font-weight:600}.md-sidebar-toc a{color:#42b983;font-weight:600}.markdown-preview h1{font-size:32px;font-size:2rem;margin:0 0 16px;margin:0 0 1rem}.markdown-preview h2{font-size:28px;font-size:1.75rem;margin:45px 0 12.8px;margin:45px 0 .8rem}.markdown-preview h3{font-size:24px;font-size:1.5rem;margin:40px 0 9.6px;margin:40px 0 .6rem}.markdown-preview h4{font-size:20px;font-size:1.25rem}.markdown-preview h5,.markdown-preview h6{font-size:16px;font-size:1rem}.markdown-preview h6{color:#777}.markdown-preview figure,.markdown-preview p{margin:1.2em 0}.markdown-preview ol,.markdown-preview p,.markdown-preview ul{line-height:25.6px;line-height:1.6rem;word-spacing:.8px;word-spacing:.05rem}.markdown-preview ol,.markdown-preview ul{padding-left:24px;padding-left:1.5rem}.markdown-preview blockquote{border-left:4px solid #42b983;border-left:4px solid var(--theme-color,#42b983);color:#858585;background-color:#f0f0f0;margin:2em 0;padding-left:20px}.markdown-preview blockquote p{font-weight:600;margin-left:0}.markdown-preview iframe{margin:1em 0}.markdown-preview em{color:#7f8c8d}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.markdown-preview a.tag,.markdown-preview a.tag:active,.markdown-preview a.tag:link,.markdown-preview a.tag:visited,.markdown-preview span.tag{display:inline-block;background-color:var(--vscode-badge-background,rgba(127,127,127,.18));color:var(--vscode-badge-foreground,currentColor);border-radius:2em;font-size:.85em;font-weight:500;padding:.05em .55em;line-height:1.5;white-space:nowrap;text-decoration:none;text-shadow:none;box-shadow:none;transition:background-color .12s ease,opacity .12s ease}.markdown-preview a.tag{cursor:pointer}.markdown-preview a.tag:focus,.markdown-preview a.tag:hover{background-color:var(--vscode-badge-background,rgba(127,127,127,.32));color:var(--vscode-badge-foreground,currentColor);opacity:.85;text-decoration:none;outline:0}.markdown-preview .wikilink-embed-content{border-left:3px solid var(--vscode-textBlockQuote-border,rgba(128,128,128,.3));background:var(--vscode-textBlockQuote-background,rgba(128,128,128,.05));margin:.5em 0;padding:.5em .75em;border-radius:0 3px 3px 0}.markdown-preview .wikilink-embed-content.wikilink-embed-error{border-left-color:var(--vscode-errorForeground,#cf222e);color:var(--vscode-errorForeground,#cf222e);font-style:italic;opacity:.8}.markdown-preview .wikilink-embed-content h1:first-child,.markdown-preview .wikilink-embed-content h2:first-child,.markdown-preview .wikilink-embed-content h3:first-child,.markdown-preview .wikilink-embed-content h4:first-child,.markdown-preview .wikilink-embed-content h5:first-child,.markdown-preview .wikilink-embed-content h6:first-child{margin-top:.25em}.markdown-preview .wikilink-embed-content .wikilink-embed-content{margin:.25em 0;padding:.25em .5em}.markdown-preview .block-id{display:none}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<p><a href="../../zarovizsga.html">⬅ Vissza a főoldalra</a></p>
+<h2 id="8-tétel-számítógép-hálózatok-osztályozási-szempontjai-hálózati-rétegmodellek-ip-technológia-címzési-rendszere-és-vezérlése-forgalomirányítás-elve-és-az-útválasztási-kategóriák-jellemzése-tcp-és-udp-mechanizmusok">8. tétel: Számítógép-hálózatok osztályozási szempontjai. Hálózati rétegmodellek. IP technológia címzési rendszere, és vezérlése. Forgalomirányítás elve és az útválasztási kategóriák jellemzése. TCP és UDP mechanizmusok. </h2>
+<hr>
+<h3 id="hálózati-alapfogalmak">Hálózati alapfogalmak </h3>
+<p>A számítógép-hálózat nem más, mint önálló (autonóm) gépek összekapcsolt rendszere, amelyeket azért kötnek össze, hogy közösen elvégezzenek valamilyen feladatot.</p>
+<h4 id="a-hálózatépítés-fő-céljai">A hálózatépítés fő céljai </h4>
+<ul>
+<li><strong>Kommunikáció:</strong> Lehetőséget biztosít emberek és gépek közötti adatcserére.</li>
+<li><strong>Erőforrásmegosztás:</strong> Közös használatú eszközök (pl. nyomtatók) és adatok elérése.</li>
+<li><strong>Skálázhatóság:</strong> A rendszer könnyen bővíthető újabb elemekkel.</li>
+<li><strong>Takarékosság és megbízhatóság:</strong> Olcsóbb és biztonságosabb üzemeltetés a megosztott és többszörözött erőforrások révén.</li>
+</ul>
+<h4 id="a-hálózat-összetevői">A hálózat összetevői </h4>
+<ol>
+<li><strong>Hardveres elemek:</strong> Számítógépek, perifériák (nyomtatók, szkennerek).</li>
+<li><strong>Összekötő berendezések:</strong> Kapcsolók (switchek), forgalomirányítók (routerek), valamint a fizikai vezetékek és kábelek.</li>
+<li><strong>Szoftveres elemek:</strong> Protokollok, hálózati operációs rendszerek és alkalmazások, amelyek a működést vezérlik.</li>
+</ol>
+<hr>
+<h3 id="kommunikációs-alapfogalmak">Kommunikációs alapfogalmak </h3>
+<p>A hálózati kommunikációhoz szükség van eszközökre, amelyek üzenetet küldenek és fogadnak, valamint egy útra, amin az üzenet halad.</p>
+<ul>
+<li>
+<p><strong>Csomópont (Node):</strong> Minden olyan eszköz a hálózatban, amelynek saját címe van és képes kommunikálni.</p>
+<ul>
+<li><strong>Végpont (End-node):</strong> A kommunikáció forrása vagy célja (pl. egy PC vagy egy okostelefon).</li>
+<li><strong>Hálózati csomópont (Network-node):</strong> Olyan köztes eszköz, amely csak továbbítja a jeleket (pl. egy switch).</li>
+</ul>
+</li>
+<li>
+<p><strong>Adatátviteli elemek:</strong></p>
+<ul>
+<li><strong>Közeg:</strong> Az anyag vagy eszköz, amin a jel halad (pl. rézkábel, optikai szál vagy a levegő).</li>
+<li><strong>Csatorna:</strong> Az a konkrét útvonal vagy frekvenciasáv, amit az adat használ.</li>
+<li><strong>Ütközés:</strong> Az a hibahelyzet, amikor két eszköz egyszerre próbál jelet küldeni ugyanazon a csatornán, így a jelek zavarják egymást.</li>
+</ul>
+</li>
+<li>
+<p><strong>Jelek kezelése:</strong></p>
+<ul>
+<li><strong>Moduláció / Demoduláció:</strong> A digitális adatok (számítógép) és az analóg jelek (pl. telefonvonal) közötti átalakítás.</li>
+<li><strong>Multiplexelés:</strong> Több különálló beszélgetés vagy adatfolyam átküldése egyetlen közös vezetéken úgy, hogy azok ne keveredjenek össze.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="kapcsolási-módok">Kapcsolási módok </h3>
+<p>A hálózatok különböző módon építhetik fel az utat az adatok számára:</p>
+<ol>
+<li><strong>Vonalkapcsolt:</strong> A kommunikáció idejére egy fix, dedikált fizikai utat foglal le a két fél között. Amíg tart a kapcsolat, senki más nem használhatja azt az utat. (Hagyományos telefonhálózat).</li>
+<li><strong>Üzenetkapcsolt:</strong> Az üzenetet a köztes csomópontok először teljes egészében letárolják, majd továbbküldik a következő pontra ("Store-and-forward"). (Régi telex rendszerek).</li>
+<li><strong>Csomagkapcsolt:</strong> Az adatot kis darabokra, úgynevezett csomagokra bontják. Minden csomag külön-külön, akár más-más útvonalon is eljuthat a célhoz, ahol végül újra összeállnak. (Az internet alapműködése).</li>
+</ol>
+<hr>
+<h3 id="számítógép-hálózatok-osztályozási-szempontjai">Számítógép-hálózatok osztályozási szempontjai </h3>
+<p>A hálózatokat az alábbi négy fő szempont szerint csoportosítjuk:</p>
+<h4 id="1-lefedett-fizikai-terület-mérete-szerint">1. Lefedett fizikai terület mérete szerint </h4>
+<ul>
+<li><strong>BAN (Body Area Network):</strong> Hálózat az emberi testen vagy a testben (pl. agy-számítógép interfész / BCI).</li>
+<li><strong>PAN (Personal Area Network):</strong> Személyi hálózat, egyéni használatra szánt eszközök kapcsolata.</li>
+<li><strong>SOHO (Small Office / Home Office):</strong> Otthoni vagy kiscéges hálózat.</li>
+<li><strong>LAN (Local Area Network – Helyi hálózat):</strong>
+<ul>
+<li>Kiterjedése viszonylag kicsi (néhány km<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>), jellemzően egy intézményre korlátozódik.</li>
+<li>Kiépítését és menedzselését maga az intézmény végzi.</li>
+<li>Jellemzői: Állandó hozzáférés, nagy átviteli sebesség (10 – 10 000 Mbps).</li>
+<li>Biztonság: A technológiából és a rövid távolságból adódóan magas.</li>
+<li>Eszközei: Repeater, Bridge, Switch, Router.</li>
+<li>Átviteli közeg: Huzalozott (csavart érpár, koaxiális kábel, optikai szál) vagy vezeték nélküli (rádióhullám).</li>
+</ul>
+</li>
+<li><strong>MAN (Metropolitan Area Network – Városi/területi hálózat):</strong>
+<ul>
+<li>Területe egy várost vagy néhány kerületet fed le (pl. egyetem több telephelye, bankfiókok).</li>
+<li>Két vagy több LAN hálózatot kapcsol össze, jellemzően szolgáltatótól bérelt vonalakon keresztül.</li>
+<li>Technológiája leggyakrabban megegyezik a LAN-éval.</li>
+</ul>
+</li>
+<li><strong>WAN (Wide Area Network – Nagyterületi hálózat):</strong>
+<ul>
+<li>Nagy, földrajzilag elkülönített területek között működik.</li>
+<li>Lehetővé teszi távoli erőforrások (e-mail, WWW, fájlátvitel) elérését és valós idejű együttműködést.</li>
+</ul>
+</li>
+<li><strong>GAN (Global Area Network):</strong> Globális hálózat, maga az Internet.</li>
+</ul>
+<h4 id="2-adatátviteli-ráta-sebesség-szerint">2. Adatátviteli ráta (sebesség) szerint </h4>
+<ul>
+<li><strong>Klasszikus hálózatok:</strong> A sebesség kbps és Mbps nagyságrendű.</li>
+<li><strong>Nagysebességű hálózatok:</strong> Az átviteli ráta 100 Mbps-tól a Tbps tartományig terjed.</li>
+</ul>
+<h4 id="3-tulajdonjog-szerint">3. Tulajdonjog szerint </h4>
+<ul>
+<li><strong>Magán hálózat (Private Network):</strong> Egy szervezet vagy magánszemély kizárólagos tulajdonában és kezelésében lévő hálózat.</li>
+<li><strong>Nyilvános hálózat (Public Network):</strong> Hálózati szolgáltatók által fenntartott, bárki számára elérhető szolgáltatás.</li>
+</ul>
+<h4 id="4-mobilitás-szerint">4. Mobilitás szerint </h4>
+<ul>
+<li><strong>Rögzített (Fixed Network):</strong> A csomópontok rögzített fizikai helyen helyezkednek el.</li>
+<li><strong>Mobil (Mobile Network):</strong> Mozgásban lévő csomópontok közötti kommunikációt tesz lehetővé.</li>
+</ul>
+<hr>
+<h3 id="hálózati-rétegmodellek">Hálózati rétegmodellek </h3>
+<p>A hálózati architektúrák alapja a rétegeltség, amely lehetővé teszi a komplex kommunikációs feladatok részekre bontását.</p>
+<h4 id="általános-rétegelt-architektúra">Általános rétegelt architektúra </h4>
+<ul>
+<li><strong>Rétegek és protokollok:</strong> Minden réteg egy-egy jól definiált feladatot lát el, és azonos szintű (távoli) rétegekkel kommunikál protokollok segítségével.</li>
+<li><strong>Interfészek:</strong> A szomszédos rétegek (alatta/felette) függőleges interfészeken keresztül adnak át adatokat és szolgáltatásokat.</li>
+<li><strong>PDU (Protocol Data Unit):</strong> Az adott réteghez tartozó egységnyi adat (pl. keret, csomag, szegmens).</li>
+</ul>
+<p><img src="../../kepek/retegelthaloarchitektura.png" alt="altalanos"></p>
+<p><strong>Adatkezelési folyamatok:</strong></p>
+<ol>
+<li><strong>Tokozás (Encapsulation):</strong> Az adatok felülről lefelé haladnak. Minden réteg hozzáadja a saját vezérlő információit (fejrész/header), és szükség esetén darabolja az adatot.</li>
+<li><strong>Kicsomagolás (Decapsulation):</strong> A fogadó oldalon az adatok lentről felfelé haladnak, minden réteg lefejti a rá vonatkozó fejlécet, és továbbadja a tiszta üzenetet a felette lévőnek.</li>
+</ol>
+<hr>
+<h4 id="iso-osi-referenciamodell-7-réteg">ISO-OSI Referenciamodell (7 réteg) </h4>
+<p><img src="../../kepek/osiiso2.png" alt="isoosi2"><img src="../../kepek/osiiso1.png" alt="isoosi1"></p>
+<p>Az OSI (Open Systems Interconnection) modell hét rétegre bontja a hálózati kommunikációt. Az alsó rétegek (1-3) a hálózaton belüli adatmozgatásért, a felső rétegek (4-7) pedig a végpontok közötti adatkicserélésért és az alkalmazások kiszolgálásáért felelnek.</p>
+<h5 id="1-fizikai-réteg-physical-layer">1. Fizikai réteg (Physical Layer) </h5>
+<ul>
+<li><strong>Feladata:</strong> A bitek továbbítása a fizikai közegen keresztül. Meghatározza a mechanikai és elektromos jellemzőket.</li>
+<li><strong>Részletek:</strong> Itt dől el a feszültségszint, az időzítés, a csatlakozók lábkiosztása és a kábelek típusa (réz, optika, rádióhullám).</li>
+<li><strong>Eszközök:</strong> Hub, Repeater (ismétlő), kábelek, transzceiverek.</li>
+<li><strong>Egység:</strong> Bit.</li>
+</ul>
+<h5 id="2-adatkapcsolati-réteg-data-link-layer">2. Adatkapcsolati réteg (Data Link Layer) </h5>
+<ul>
+<li><strong>Feladata:</strong> Hibamentes átvitel biztosítása két közvetlenül kapcsolódó csomópont között.</li>
+<li><strong>Részletek:</strong> Része a keretezés (framing), a hibafelismerés (CRC ellenőrzés) és a fizikai címzés (MAC cím). Két alrétegre oszlik:
+<ul>
+<li><strong>LLC (Logical Link Control):</strong> Logikai kapcsolat vezérlése.</li>
+<li><strong>MAC (Media Access Control):</strong> Közeghozzáférés-vezérlés.</li>
+</ul>
+</li>
+<li><strong>Eszközök:</strong> Switch (kapcsoló), Bridge (híd).</li>
+<li><strong>Egység:</strong> Keret (Frame).</li>
+</ul>
+<h5 id="3-hálózati-réteg-network-layer">3. Hálózati réteg (Network Layer) </h5>
+<ul>
+<li><strong>Feladata:</strong> Az útvonalválasztás (routing) és a logikai címzés kezelése több hálózaton keresztül.</li>
+<li><strong>Részletek:</strong> Meghatározza, merre menjen a csomag a forrástól a célig. Itt történik a logikai (IP) címek kezelése és a hálózatok közötti forgalomirányítás.</li>
+<li><strong>Eszközök:</strong> Router (forgalomirányító).</li>
+<li><strong>Egység:</strong> Csomag (Packet).</li>
+</ul>
+<h5 id="4-szállítási-réteg-transport-layer">4. Szállítási réteg (Transport Layer) </h5>
+<ul>
+<li><strong>Feladata:</strong> Végpontok közötti (end-to-end) megbízható adatátvitel biztosítása.</li>
+<li><strong>Részletek:</strong> Felügyeli a sorrendiséget, a hibajavítást és a folyamatszabályozást. Itt különül el a megbízható, nyugtázott átvitel (TCP) és a gyors, de nem garantált átvitel (UDP).</li>
+<li><strong>Protokollok:</strong> TCP, UDP.</li>
+<li><strong>Egység:</strong> Szegmens (Segment).</li>
+</ul>
+<h5 id="5-viszony-réteg-session-layer">5. Viszony réteg (Session Layer) </h5>
+<ul>
+<li><strong>Feladata:</strong> Kommunikációs csatornák (szekciók) felépítése, kezelése és lebontása az alkalmazások között.</li>
+<li><strong>Részletek:</strong> Kezeli a párbeszédek szinkronizációját (ellenőrzőpontok beiktatása) és a dialógusvezérlést (ki beszélhet éppen).</li>
+</ul>
+<h5 id="6-megjelenítési-réteg-presentation-layer">6. Megjelenítési réteg (Presentation Layer) </h5>
+<ul>
+<li><strong>Feladata:</strong> Az adatok szintaktikai és szemantikai egységesítése.</li>
+<li><strong>Részletek:</strong> Gondoskodik arról, hogy a különböző kódolású rendszerek megértsék egymást. Itt történik az adatok kódolása (pl. ASCII), titkosítása és tömörítése.</li>
+</ul>
+<h5 id="7-alkalmazási-réteg-application-layer">7. Alkalmazási réteg (Application Layer) </h5>
+<ul>
+<li><strong>Feladata:</strong> Közvetlen interfész biztosítása a hálózati szolgáltatások és a felhasználói programok között.</li>
+<li><strong>Részletek:</strong> Itt futnak a hálózati alkalmazások protokolljai, mint a webböngészés (HTTP), fájlátvitel (FTP), vagy a névfeloldás (DNS).</li>
+</ul>
+<hr>
+<h4 id="tcpip-vs-osi-modell">TCP/IP vs. OSI Modell </h4>
+<p>Az internet gyakorlatában használt TCP/IP modell összevont rétegeket használ:</p>
+<p><img src="../../kepek/tcpiposi.png" alt="tcpiposi"></p>
+<hr>
+<h4 id="hibrid-referenciamodell">Hibrid Referenciamodell </h4>
+<p>Az oktatásban gyakran használt 5 rétegű modell, amely az OSI alsóbb rétegeit és a TCP/IP felsőbb rétegeit ötvözi:</p>
+<p><img src="../../kepek/hibrid.png" alt="hibrid"></p>
+<h3 id="hálózati-köztes-csomópont-típusok">Hálózati köztes csomópont típusok </h3>
+<p>A hálózati kommunikáció során a végpontok közötti adatátvitelt különböző aktív hálózati eszközök (köztes csomópontok) segítik. Az alapján csoportosítjuk őket, hogy az OSI modell melyik rétegében működnek:</p>
+<ul>
+<li><strong>Repeater (Ismétlő):</strong>
+<ul>
+<li><strong>Réteg:</strong> 1. Fizikai réteg.</li>
+<li><strong>Feladata:</strong> A beérkező gyengült vagy torzult elektromos/optikai jelet felerősíti és újraformázza, majd továbbküldi. Célja a hálózat fizikai hosszának (kábeltávolság) megnövelése. Nem értelmezi az adatokat.</li>
+</ul>
+</li>
+<li><strong>Bridge (Híd):</strong>
+<ul>
+<li><strong>Réteg:</strong> 2. Adatkapcsolati réteg.</li>
+<li><strong>Feladata:</strong> Két azonos típusú (pl. két Ethernet) hálózati szegmenst köt össze. MAC (fizikai) címek alapján megvizsgálja a kereteket, és csak azokat engedi át a másik oldalra, amelyek valóban oda is szólnak. Ezzel csökkenti a hálózat felesleges terhelését.</li>
+</ul>
+</li>
+<li><strong>Switch (Kapcsoló):</strong>
+<ul>
+<li><strong>Réteg:</strong> 2. Adatkapcsolati réteg.</li>
+<li><strong>Feladata:</strong> Olyan, mint egy többportos híd. Megtanulja, hogy melyik portjára milyen MAC című eszköz van kötve (MAC tábla), és a beérkező kereteket kizárólag a célállomás portjára küldi tovább. Dedikált sávszélességet biztosít, és megszünteti az ütközéseket (collision).</li>
+</ul>
+</li>
+<li><strong>Router (Forgalomirányító):</strong>
+<ul>
+<li><strong>Réteg:</strong> 3. Hálózati réteg.</li>
+<li><strong>Feladata:</strong> Különböző IP hálózatokat köt össze (pl. a belső otthoni hálózatot az Internettel). IP-címek és útválasztási táblázatok alapján dönti el, merre továbbítsa a csomagokat a legoptimálisabb úton.</li>
+</ul>
+</li>
+<li><strong>Access Point (AP - Hozzáférési pont):</strong>
+<ul>
+<li><strong>Feladata:</strong> Vezeték nélküli (Wi-Fi) hálózatot köt össze egy vezetékes (Ethernet) hálózattal. Általában adatkapcsolati szinten (Bridge-ként) működik, átemelve a rádiós kereteket a vezetékes hálózatra.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="ip-technológia-internet-protocol">IP technológia (Internet Protocol) </h3>
+<p>Az IP a TCP/IP referenciamodell legfontosabb hálózati rétegbeli protokollja, amely az általános adatszállításért felel.</p>
+<ul>
+<li><strong>Működési elve:</strong> Összeköttetés-mentes (connectionless) szolgáltatást nyújt a szállítási réteg (pl. TCP vagy UDP) felé. Ez azt jelenti, hogy a csomagok elküldése előtt nem épít fel kapcsolatot a vevővel, és nem is garantálja a sikeres megérkezést ("best-effort"). Ezt a logikai adatcsomagot <strong>Datagramnak</strong> hívjuk.</li>
+</ul>
+<p><strong>A Datagram (IP Csomag) jellemzői:</strong><br>
+Minden IP csomag egy önálló, független adategység, amely tartalmazza a kézbesítéshez szükséges összes információt (például a forrás és a cél címét), így a hálózat bármelyik útvonalon el tudja juttatni a célhoz.</p>
+<p><strong>Az IPv4 csomag felépítése:</strong></p>
+<ol>
+<li><strong>Header (Fejrész):</strong> Változó hosszúságú, 20-tól 60 bájtig terjedhet (5–15 darab 4 bájtos/32 bites szóból áll). Tartalmazza a verziót, a csomag élettartamát (TTL), a protokoll azonosítóját, valamint a forrás és a cél IP-címét.<br>
+<img src="../../kepek/fejresz.png" alt="header"></li>
+<li><strong>Payload (Rakrész/Adat):</strong> A szállítási rétegtől kapott adat (pl. egy TCP szegmens). A teljes IP csomag maximális mérete 64 kB (65 535 bájt) lehet.
+<ul>
+<li><em>Fontos:</em> Az IP fejrész tartalmaz ellenőrző összeget (Header Checksum), de magára a <em>rakrészre nincs ellenőrzés</em> (ezt a felsőbb rétegeknek kell megoldaniuk).</li>
+</ul>
+</li>
+</ol>
+<p><strong>Darabolás (Fragmentation):</strong><br>
+A fizikai hálózatoknak van egy maximális keretmérete (MTU - Maximum Transmission Unit, pl. Ethernetnél 1500 bájt). Ha egy IP csomag ennél nagyobb, a forgalomirányító (Router) automatikusan kisebb darabokra vágja (fragmentálja). Az újraösszeszerelést csak a legvégső célállomás végzi el.</p>
+<hr>
+<h3 id="ip-címzés-ipv4">IP Címzés (IPv4) </h3>
+<p>Az IP-cím a hálózati réteg logikai azonosítója.</p>
+<ul>
+<li><strong>Mit azonosít?</strong> Nem magát a számítógépet, hanem a hálózati interfészt (hálózati kártyát) azonosítja egyértelműen. Egy routernek például annyi IP-címe van, ahány hálózathoz csatlakozik.</li>
+<li><strong>Kiosztás:</strong> A globális IP-címteret az IANA (Internet Assigned Numbers Authority) nevű szervezet osztja ki és felügyeli.</li>
+</ul>
+<p><strong>A cím szerkezete:</strong><br>
+A 32 bites IP-cím logikailag mindig két részre oszlik:</p>
+<ol>
+<li><strong>Hálózat azonosító (Network ID):</strong> Megmutatja, melyik hálózathoz (broadcast tartományhoz) tartozik a gép.</li>
+<li><strong>Gép azonosító (Host ID):</strong> Egyértelműen azonosítja a konkrét gépet az adott hálózaton belül.</li>
+</ol>
+<h4 id="címkezelés-és-hálózati-maszk">Címkezelés és Hálózati Maszk </h4>
+<p>Hogy a számítógép tudja, hol végződik a hálózat azonosítója és hol kezdődik a gép azonosítója, <strong>alhálózati maszkot (Subnet Mask)</strong> használunk.</p>
+<ul>
+<li><strong>A <code>/n</code> jelölés (CIDR prefix):</strong> Megmondja, hogy a 32 bitből pontosan mennyi (<code>n</code> darab) bit jelöli a hálózatot. Például a <code>/24</code> azt jelenti, hogy az első 24 bit a hálózaté (ez decimálisan a <code>255.255.255.0</code> maszknak felel meg).</li>
+</ul>
+<h4 id="ip-címosztályok-klasszikus-osztályos-címzés">IP címosztályok (Klasszikus osztályos címzés) </h4>
+<p>Az internet hajnalán a címeket fix méretű osztályokba sorolták, hogy megkönnyítsék az elosztást:</p>
+<ul>
+<li><strong>A osztály:</strong>
+<ul>
+<li><strong>Cél:</strong> Hatalmas, több millió gépet tartalmazó hálózatoknak (pl. óriásvállalatok, internetszolgáltatók).</li>
+<li><strong>Szerkezet:</strong> 8 bit a hálózatnak, 24 bit a gépeknek (Maszk: <code>/8</code> vagy <code>255.0.0.0</code>).</li>
+<li><strong>Kezdő bájt:</strong> 1 – 126.</li>
+</ul>
+</li>
+<li><strong>B osztály:</strong>
+<ul>
+<li><strong>Cél:</strong> Közepes és nagy hálózatoknak (pl. egyetemek, nagy cégek).</li>
+<li><strong>Szerkezet:</strong> 16 bit a hálózatnak, 16 bit a gépeknek (Maszk: <code>/16</code> vagy <code>255.255.0.0</code>).</li>
+<li><strong>Kezdő bájt:</strong> 128 – 191.</li>
+</ul>
+</li>
+<li><strong>C osztály:</strong>
+<ul>
+<li><strong>Cél:</strong> Kisebb hálózatoknak (pl. irodák, otthonok).</li>
+<li><strong>Szerkezet:</strong> 24 bit a hálózatnak, 8 bit a gépeknek (Maszk: <code>/24</code> vagy <code>255.255.255.0</code>).</li>
+<li><strong>Kapacitás:</strong> Egy ilyen hálózatban maximum 254 gép lehet.</li>
+<li><strong>Kezdő bájt:</strong> 192 – 223.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="ip-vezérlő-mechanizmusok-icmp-internet-control-message-protocol">IP-vezérlő mechanizmusok: ICMP (Internet Control Message Protocol) </h3>
+<p>Az IP protokoll önmagában nem garantálja a csomagok célba érést, és hiba esetén nem tud visszajelzést adni a feladónak. Ezt a hiányosságot hivatott megoldani az <strong>ICMP</strong>.</p>
+<ul>
+<li><strong>Besorolása:</strong> Bár az ICMP üzenetek az IP adatcsomagok belsejében (rakrészként) utaznak – mintha egy felsőbb rétegbeli protokoll lennének –, funkciójukat tekintve a <strong>hálózati réteghez (3. réteg)</strong> tartoznak, mert az IP szoros kiegészítői.</li>
+<li><strong>Fő feladata:</strong> A hálózati kommunikáció során fellépő problémák (pl. vonalszakadás, torlódás, elérhetetlen célállomás) jelzése, valamint diagnosztikai és ellenőrző funkciók ellátása.</li>
+</ul>
+<h4 id="az-icmp-üzenet-felépítése">Az ICMP üzenet felépítése </h4>
+<p>Az ICMP csomagok fejrésze egyszerű és az alábbi négy alapvető mezőből áll:</p>
+<ol>
+<li><strong>Típus (Type):</strong> Meghatározza az üzenet fő okát vagy kategóriáját.
+<ul>
+<li><em>Példák:</em> <code>Destination Unreachable</code> (Cél elérhetetlen), <code>Redirect</code> (Útvonal-módosítás javaslata), <code>Echo Request</code> (Ping kérés).</li>
+</ul>
+</li>
+<li><strong>Kód (Code):</strong> A Típushoz tartozó finomított, részletesebb információ.
+<ul>
+<li><em>Példa:</em> Ha a Típus "Cél elérhetetlen", a Kód pontosítja a hiba okát (pl. hálózat elérhetetlen, gép elérhetetlen, vagy a kért port zárt).</li>
+</ul>
+</li>
+<li><strong>Ellenőrző összeg (Checksum):</strong> Biztosítja az ICMP üzenet sértetlenségét. Segítségével a fogadó fél ellenőrizheti, hogy történt-e adatvesztés vagy torzulás az út során.</li>
+<li><strong>Adat (Data):</strong> Kiegészítő információkat tartalmaz a hibával kapcsolatban. Hibaüzenet esetén ez a mező általában a hibát okozó eredeti IP-csomag fejrészét és első pár bájtját tartalmazza, így a küldő pontosan be tudja azonosítani, hogy melyik csomagja akadt el.</li>
+</ol>
+<h4 id="gyakorlati-alkalmazás-diagnosztika">Gyakorlati alkalmazás (Diagnosztika) </h4>
+<p>A hálózatok üzemeltetése során a leggyakoribb hibakereső parancsok közvetlenül az ICMP protokollra épülnek:</p>
+<ul>
+<li><strong>Ping:</strong> Egy ICMP visszhangkérést (<em>Echo Request</em>) küld a célgépnek. Ha a gép elérhető, egy ICMP visszhangválasszal (<em>Echo Reply</em>) reagál. Ezzel tesztelhető a vonal megléte és a válaszidő.</li>
+<li><strong>Traceroute (tracert):</strong> Az ICMP időtúllépési hibaüzeneteit (<em>Time Exceeded</em>) használja fel arra, hogy feltérképezze, pontosan mely routereken keresztül halad át a csomag a célig.</li>
+</ul>
+<h3 id="forgalomirányítás-routing">Forgalomirányítás (Routing) </h3>
+<p>A forgalomirányítás az a folyamat, amely során a hálózat eldönti, hogy a beérkező csomagok (IP datagramok) milyen útvonalon, merre haladjanak tovább a célállomás felé.</p>
+<ul>
+<li><strong>Hol történik?</strong> Nemcsak a forgalomirányítók (Routerek), hanem maguk a végpontok (Hostok) is hoznak forgalomirányítási döntéseket (például amikor eldöntik, hogy a csomagot a helyi hálózaton adják át, vagy elküldik az alapértelmezett átjárónak).</li>
+</ul>
+<h4 id="a-forgalomirányítási-táblázat-routing-tábla">A forgalomirányítási táblázat (Routing tábla) </h4>
+<p>Minden forgalomirányítást végző eszköz egy belső adatbázist, az úgynevezett routing táblát használja a döntéshozatalhoz. Ennek tipikus oszlopai:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Célhálózat (Destination)</th>
+<th style="text-align:left">Netmask (Maszk)</th>
+<th style="text-align:left">Kimenő interfész (Interface)</th>
+<th style="text-align:left">Következő csomópont (Next hop)</th>
+<th style="text-align:left">Metrika (Költség)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">A hálózat IP címe, ahova a csomag tart.</td>
+<td style="text-align:left">Meghatározza a célhálózat méretét.</td>
+<td style="text-align:left">A router saját csatlakozója (pl. eth0), amin kiadja a csomagot.</td>
+<td style="text-align:left">A szomszédos router IP címe, akinek át kell adni a csomagot.</td>
+<td style="text-align:left">Az útvonal "jósága" (kisebb érték a jobb, pl. ugrások száma vagy sávszélesség).</td>
+</tr>
+</tbody>
+</table>
+<p><em>Működési elv (Longest Prefix Match):</em> Ha egy beérkező csomag célcíme több bejegyzésre is illeszkedik a táblában, a router mindig a legspecifikusabbat (a leghosszabb maszkkal rendelkezőt) választja.</p>
+<hr>
+<h4 id="forgalomirányítási-osztályok">Forgalomirányítási osztályok </h4>
+<p>Az útválasztási táblázat feltöltésének és karbantartásának módja alapján három fő osztályt különböztetünk meg:</p>
+<p><strong>1. Minimális routing</strong></p>
+<ul>
+<li><strong>Jellemzője:</strong> Izolált, forgalomirányító (router) nélküli megoldás.</li>
+<li><strong>Működése:</strong> Csak a közvetlenül csatlakoztatott (egyazon fizikai hálózaton lévő) eszközök közötti kommunikációt teszi lehetővé. Külső hálózatba nem lehet csomagot küldeni.</li>
+</ul>
+<p><strong>2. Statikus routing</strong></p>
+<ul>
+<li><strong>Jellemzője:</strong> A routing tábla bejegyzéseit a rendszergazda manuálisan, kézzel viszi be.</li>
+<li><strong>Előnye:</strong> Nagyon biztonságos, nem terheli a hálózatot extra útválasztási forgalommal, és a router CPU-ját is kíméli.</li>
+<li><strong>Hátránya:</strong> Nem alkalmazkodik a változásokhoz (ha egy vonal megszakad, a kapcsolat elveszik, amíg a rendszergazda át nem írja a táblát). Csak kisméretű hálózatokban praktikus.</li>
+</ul>
+<p><strong>3. Dinamikus routing</strong></p>
+<ul>
+<li><strong>Jellemzője:</strong> A forgalomirányítók speciális routing protokollok segítségével kommunikálnak egymással, és automatikusan építik fel, illetve frissítik a táblázataikat. Hibatűrő, mert vonalszakadás esetén automatikusan új utat keres. Két fő alcsoportja van:
+<ul>
+<li>
+<p><strong>Belső forgalomirányítás (IGP - Interior Gateway Protocol):</strong> Egyetlen autonóm rendszeren (pl. egy egyetem vagy cég saját hálózata) belül keresi a legelőnyösebb útvonalat.</p>
+<ul>
+<li><em>Távolságvektor (Distance Vector) alapú:</em> Csak a szomszédaitól kapott információkra támaszkodik, az "ugrások" számát (hop count) méri. (Pl. <strong>RIP</strong>, <strong>EIGRP</strong>).</li>
+<li><em>Link-állapot (Link-State) alapú:</em> Minden router ismeri a teljes hálózat topológiáját, és bonyolult matematikai algoritmussal (Dijkstra) számolja ki a legrövidebb utat sávszélesség alapján. (Pl. <strong>OSPF</strong>, <strong>IS-IS</strong>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Külső forgalomirányítás (EGP - Exterior Gateway Protocol):</strong> Különálló autonóm rendszerek (különböző szolgáltatók, nagyvállalatok) közötti útvonalak meghatározására szolgál.</p>
+<ul>
+<li><em>Útvonalvektor (Path Vector) alapú:</em> Nem a leggyorsabb, hanem a szabályozási és gazdasági szempontból legmegfelelőbb utat választja. A jelenlegi Internet alapköve. (Pl. <strong>BGP</strong>).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="távolságvektor-alapú-forgalomirányítás-distance-vector">Távolságvektor alapú forgalomirányítás (Distance Vector) </h4>
+<p>Ennél a módszernél a routing tábla minden egyes célhálózathoz a legjobb (legkisebb költségű) küldési irányt és a hozzá tartozó távolságot (metrikát) tárolja. A működés alapja a <strong>Bellman-Ford algoritmus</strong>.</p>
+<p><strong>A Bellman-Ford algoritmus lépései:</strong></p>
+<ol>
+<li><strong>Információcserék:</strong> Minden <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span> csomópont megkapja az összes közvetlen <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span> szomszédjától azok távolságvektorait, azaz a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">D(k,j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span></span></span></span> értékeket (ahol <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">D(k,j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span></span></span></span> a szomszéd távolsága a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span></span></span></span> céltól).</li>
+<li><strong>Metrika számolás:</strong> Az <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span> csomópont kiszámolja, hogy milyen messze lenne a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span></span></span></span> cél, ha a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span> szomszédon keresztül menne. A képlet:<br>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>k</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo>:</mo><mo>=</mo><mi>d</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo><mo>+</mo><mi>D</mi><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">x_{i,k,j} := d(i,k) + D(k,j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span></span></span></span></span><br>
+<em>(Saját távolság a szomszédig + szomszéd távolsága a célig).</em></li>
+<li><strong>Tábla frissítése:</strong> Ha ez az új számított távolság kisebb, mint az eddig ismert legjobb út (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>k</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo>&lt;</mo><mi>D</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">x_{i,k,j} &lt; D(i,j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8252em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span></span></span></span>), akkor a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span> szomszédon át vezető út előnyösebb. A csomópont frissíti a saját tábláját:<br>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>:</mo><mo>=</mo><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>k</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">D(i,j) := x_{i,k,j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></span></li>
+<li><strong>Ismétlés:</strong> Egy meghatározott ciklusidő várakozás után a folyamat kezdődik elölről az 1. lépéssel.<br>
+<em>Eredmény:</em> Az eljárás véges számú lépés (információcsere) után konvergál, és optimális utat szolgáltat a forrás és a cél csomópontok között.</li>
+</ol>
+<p><img src="../../kepek/bellman_ford_csomopontonkent.gif" alt="bellmanford"></p>
+<p><strong>Problémák és hátrányok:</strong></p>
+<ul>
+<li><strong>Túl kicsi kezdőérték:</strong> Ha az eddig használt optimális út megsérül, a hálózat nehezen áll át.</li>
+<li><strong>Végtelenig számlálás (Count-to-infinity):</strong> A rendszer nagyon lassan reagál a negatív topológiai változásokra (pl. vonalszakadás). A routerek hamis információk alapján folyamatosan növelhetik a távolságot egymás között, mielőtt rájönnének, hogy az út megszűnt.</li>
+</ul>
+<p><strong>Gyakorlati megvalósítások (Protokollok):</strong></p>
+<ul>
+<li><strong>RIP (Routing Information Protocol):</strong> Régebbi protokoll, csak kis méretű hálózatokba ajánlott. Alapvető hátránya, hogy nincs benne autentikáció (biztonsági kockázat), és lassan konvergál.</li>
+<li><strong>EIGRP (Enhanced Interior Gateway Routing Protocol):</strong> A Cisco saját fejlesztésű, fejlett protokollja, elsősorban LAN hálózatokra. Kijavítja a végtelenig számlálás hibáját és gyorsabb reagálást biztosít.</li>
+</ul>
+<h3 id="link-állapot-alapú-forgalomirányítás-link-state-routing">Link-állapot alapú forgalomirányítás (Link-State Routing) </h3>
+<p>A Link-állapot alapú forgalomirányítás során minden router rendelkezik a hálózat <strong>teljes térképével</strong> (topológiájával). Nem csak a szomszédoktól kapott távolságadatokra hagyatkoznak, hanem saját maguk számítják ki az optimális útvonalakat.</p>
+<h4 id="a-mechanizmus-lépései">A mechanizmus lépései: </h4>
+<ol>
+<li><strong>Szomszédok felfedezése:</strong> A router "Hello" üzenetekkel azonosítja a közvetlenül kapcsolódó szomszédait.</li>
+<li><strong>Költségmérés:</strong> Megméri a szomszédok felé vezető kapcsolatok költségét (késleltetés, sávszélesség).</li>
+<li><strong>LSP (Link State Packet) készítése:</strong> Egy adatcsomagot állít össze, amely tartalmazza a szomszédait és a hozzájuk tartozó költségeket.</li>
+<li><strong>Elárasztás (Flooding):</strong> Az LSP csomagot elküldi az összes többi routernek. Minden router megkapja mindenki más állapotát, így mindenki ugyanazt a topológiai adatbázist építi fel.</li>
+<li><strong>Útvonalszámítás (Dijkstra):</strong> A router lefuttatja a Dijkstra-algoritmust a saját adatbázisán, hogy meghatározza a legrövidebb utakat (feszítőfa készítése).</li>
+</ol>
+<p><img src="../../kepek/link_state_dijkstra.gif" alt="dijkstra"></p>
+<h4 id="főbb-protokollok">Főbb protokollok: </h4>
+<ul>
+<li><strong>OSPF (Open Shortest Path First):</strong> Belső forgalomirányító protokoll (IGP), leginkább vállalati hálózatokban (LAN/MAN) használják. Az IP réteg felett működik.</li>
+<li><strong>IS-IS (Intermediate System to Intermediate System):</strong> Gerinchálózati protokoll, szolgáltatói környezetben népszerű. Közvetlenül az adatkapcsolati réteg felett fut, így független a hálózati protokolloktól (pl. IPv4/IPv6).</li>
+</ul>
+<h3 id="transzport-protokollok-ip-felett">Transzport protokollok IP felett </h3>
+<p>A hálózati (IP) réteg felett működő transzport (szállítási) réteg alapvető célja, hogy a végpontok közötti adatátvitelt kiszolgálja, és biztosítsa, hogy az alkalmazási (legfelső) rétegben is szabványos lehessen a kommunikáció.</p>
+<h4 id="a-transzport-réteg-funkciói">A transzport réteg funkciói </h4>
+<p>A transzport réteg az alábbi fő feladatokat látja el a hálózati kommunikáció során:</p>
+<ul>
+<li><strong>Címzés:</strong> A végponti kommunikációt folytató programok (alkalmazások) egyértelmű azonosítása. Bár az IP-cím azonosítja a számítógépet, a transzport réteg (a portszámok segítségével) határozza meg, hogy a beérkező adat pontosan melyik szoftverhez tartozik.</li>
+<li><strong>Kapcsolat építése és bontása:</strong> A végpontok közötti logikai kapcsolat szabályos felépítése, a szegmenssorozatok (feldarabolt adategységek) küldésének és fogadásának menedzselése, valamint a kommunikáció lezárultával a kapcsolat bontása.</li>
+<li><strong>Adatfolyam szabályozás:</strong> A hálózati torlódások elkerülése és a forgalomelakadások kezelése (torlódásvezérlés), megakadályozva ezzel a hálózat túlterhelését és az adatvesztést.</li>
+<li><strong>Multiplexálás:</strong> A hálózati réteg erőforrásainak hatékony kihasználása azáltal, hogy több párhuzamosan futó program adatfolyamát összefogja, és egyetlen hálózati csatornán továbbítja (majd a túloldalon szétválogatja).</li>
+</ul>
+<h4 id="transzport-protokollok-szolgáltatásai">Transzport protokollok szolgáltatásai </h4>
+<p>A transzport réteg protokolljai (mint a TCP) a következő szolgáltatásokat nyújtják a felsőbb, alkalmazási rétegek felé:</p>
+<ol>
+<li><strong>Szegmensek kézbesítése:</strong> Garantálják a szegmensek megbízható módon történő, sorrendhelyes kézbesítését (nyugtázási mechanizmusokkal és hibajavítással).</li>
+<li><strong>Adatfolyam vezérlés:</strong> Szabályozzák az adatáramlás sebességét a küldő és a fogadó fél között, biztosítva, hogy a gyorsabb küldő ne terhelje túl a lassabb fogadót.</li>
+<li><strong>Multiplexálás:</strong> Lehetővé teszik, hogy a felsőbb rétegek programjai megosszák a hálózati kapcsolatot, így egy időben több hálózati szolgáltatás is zavartalanul működhet.</li>
+</ol>
+<hr>
+<h3 id="udp-user-datagram-protocol">UDP (User Datagram Protocol) </h3>
+<p>Az UDP egy a hálózati réteg (IP) felett működő transzport (szállítási) rétegbeli protokoll. Legfőbb jellemzője az egyszerűség és a gyorsaság.</p>
+<h4 id="alapvető-jellemzők">Alapvető jellemzők </h4>
+<ul>
+<li><strong>Összeköttetés nélküli (Connectionless):</strong> Adatküldés előtt nem épít fel kapcsolatot a fogadó féllel. A csomagokat egyszerűen elküldi a célállomás felé.</li>
+<li><strong>Nem megbízható kapcsolat:</strong>
+<ul>
+<li><strong>Nyugta nélküli:</strong> Nem kér és nem is kap visszajelzést (nyugtát) arról, hogy a csomagok sikeresen megérkeztek-e a célhoz.</li>
+<li><strong>Nincs beépített hibajavítás:</strong> Maga az UDP protokoll nem javítja a bithibákat, nem kéri újra az elveszett csomagokat, és nem állítja sorba a megkeveredett adatokat.</li>
+<li>Ha hibajavításra van szükség, azt mindig felsőbb szinten, magának az <strong>alkalmazásnak</strong> kell megoldania.</li>
+</ul>
+</li>
+</ul>
+<h4 id="udp-t-használó-alkalmazások-jellemzői">UDP-t használó alkalmazások jellemzői </h4>
+<p>Az UDP-t olyan programok használják, amelyeknél a sebesség fontosabb a tökéletes megbízhatóságnál:</p>
+<ul>
+<li><strong>Adatvesztés-tolerancia:</strong> Képesek elviselni, ha egy-egy csomag elvész a hálózaton (pl. élő videó- vagy hangközvetítés).</li>
+<li><strong>Átviteli ráta érzékenység:</strong> Fontos számukra a folyamatos, gyors adatáramlás és az alacsony késleltetés (valós idejűség).</li>
+</ul>
+<h4 id="az-udp-szegmens-felépítése">Az UDP szegmens felépítése </h4>
+<p>Az UDP szegmens két fő részből áll: egy nagyon egyszerű, 8 bájtos fejrészből (Header) és magából az adatból (Rakrész).</p>
+<p><strong>1. Fejrész (Header) szerkezete:</strong><br>
+A fejrész két darab 32 bites (4 bájtos) szóból áll:</p>
+<p><img src="../../kepek/udp_header.png" alt="udp_header"></p>
+<ul>
+<li><strong>1. szó:</strong>
+<ul>
+<li><strong>Forrás portszám:</strong> Azonosítja a küldő alkalmazást.</li>
+<li><strong>Cél portszám:</strong> Azonosítja a fogadó alkalmazást.</li>
+</ul>
+</li>
+<li><strong>2. szó:</strong>
+<ul>
+<li><strong>UDP szegmens hossza:</strong> Megadja a teljes szegmens (fejrész + rakrész) együttes hosszát.</li>
+<li><strong>Fejrész ellenőrző összeg (Checksum):</strong> Arra szolgál, hogy észlelje a szállítás közben keletkezett esetleges adatsérüléseket.</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Rakrész (Payload):</strong></p>
+<ul>
+<li><strong>Tartalma:</strong> Tetszőleges adat lehet (bármilyen felsőbb rétegbeli protokoll adategysége, azaz PDU-ja).</li>
+<li><strong>Előnyök:</strong> Egyszerű felépítése miatt kifejezetten előnyös és gyakran használt tűzfalakon átvezetett (tunneling) protokollok áthidalására.</li>
+<li><strong>Felelősség:</strong> Az UDP protokoll a rakrészben szállított adat sorsával nem foglalkozik. A bithibák javítását, valamint az egynél több példányban megérkező, vagy a teljesen elveszett (kevesebb példányos) kézbesítések kezelését teljes mértékben a rakrészben szállított felsőbb szintű protokollra (alkalmazásra) bízza.</li>
+</ul>
+<h3 id="tcp-transmission-control-protocol">TCP (Transmission Control Protocol) </h3>
+<p>Az UDP "laza" és gyors működésével szemben a TCP egy a hálózati réteg (IP) felett működő, a maximális megbízhatóságra és pontosságra kihegyezett transzport (szállítási) rétegbeli protokoll.</p>
+<h4 id="alapvető-jellemzők-1">Alapvető jellemzők </h4>
+<ul>
+<li><strong>Összeköttetés-alapú (Connection-oriented):</strong> Mielőtt bármilyen tényleges adatot küldene, a két végpont (a kliens és a szerver) logikai kapcsolatot épít ki egymással, ami a szegmenssorozatok küldésének és fogadásának teljes idejére fennáll.</li>
+<li><strong>Megbízható, nyugtázott kapcsolat:</strong> Minden elküldött adatról visszajelzést (nyugtát) vár. Ha egy csomag elveszik, a TCP automatikusan gondoskodik az újraküldésről.</li>
+<li><strong>Sorszámozás:</strong> A hálózaton utazó adatok minden egyes bájtját szigorúan sorszámozza (Sequence Number). Ez garantálja, hogy a fogadó oldalon a csomagok helyes sorrendben álljanak össze.</li>
+<li><strong>Következő várt bájt jelzése:</strong> A kommunikáció során a fogadó fél mindig megüzeni a társának, hogy mi a <em>soron következő</em>, általa várt bájt sorszáma.</li>
+<li><strong>Áramlásszabályozás (Flow control):</strong> A vevő folyamat (processz) folyamatosan visszajelzi a küldőnek a saját befogadó kapacitását (a legközelebbi szegmens megengedett méretét / ablakméretét). Ezzel elkerülik, hogy a gyorsabb fél túlterhelje a lassabbat.</li>
+</ul>
+<hr>
+<h4 id="a-tcp-szegmens-felépítése">A TCP szegmens felépítése </h4>
+<p>A TCP szegmens két részből áll: egy nagyon részletes fejrészből (Header) és a tényleges adatból (Rakrész). A fejrész 32 bites (4 bájtos) "szavakból" épül fel:</p>
+<p><img src="../../kepek/tcp_header.png" alt="tcp"></p>
+<ul>
+<li><strong>1. szó:</strong> <strong>Forrás portszám és Cél portszám:</strong> Azonosítják a kommunikáló alkalmazásokat a két gépen.</li>
+<li><strong>2. szó:</strong> <strong>Szegmens sorszáma (Sequence Number):</strong>
+<ul>
+<li>Ha a SYN bit = 0: Ez a szám a szegmensben lévő első adatbájt sorszámát jelöli.</li>
+<li>Ha a SYN bit = 1: Ez a kapcsolatfelépítéskor használt kezdeti szekvenciaszám (ISN).</li>
+</ul>
+</li>
+<li><strong>3. szó:</strong> <strong>Nyugtázási szám (Acknowledgment Number):</strong> A partner által várt következő szekvenciaszám (tehát eddig minden adat hiánytalanul megérkezett).</li>
+<li><strong>4. szó:</strong>
+<ul>
+<li><strong>Adat offset:</strong> Megadja a fejrész hosszát.</li>
+<li><strong>Fenntartott mező:</strong> Későbbi fejlesztésekre fenntartva.</li>
+<li><strong>Kontroll bitek (Flagek):</strong> A kapcsolat állapotát vezérlő jelzőbitek: <code>URG</code>, <code>ACK</code> (nyugta), <code>PSH</code>, <code>RST</code> (megszakítás), <code>SYN</code> (szinkronizálás), <code>FIN</code> (befejezés).</li>
+<li><strong>Ablakméret (Window Size):</strong> A nyugtázott bájtok száma, amelyet a vevő még hajlandó fogadni (ez az áramlásszabályozás alapja).</li>
+</ul>
+</li>
+<li><strong>5. szó:</strong>
+<ul>
+<li><strong>Ellenőrző összeg (Checksum):</strong> Az adatok sértetlenségének ellenőrzésére.</li>
+<li><strong>Sürgősségi mutató (URG pointer):</strong> Jelzi, ha a csomagban azonnal feldolgozandó, sürgős adat van.</li>
+</ul>
+</li>
+<li><strong>6. szó:</strong> <strong>Opciók és Kitöltés (Padding):</strong> Kiegészítő beállítások (a kitöltés biztosítja, hogy a fejrész hossza mindig osztható legyen 32 bittel).</li>
+</ul>
+<hr>
+<h4 id="tcp-kommunikációs-mechanizmusok-kapcsolatfelépítés">TCP kommunikációs mechanizmusok (Kapcsolatfelépítés) </h4>
+<p>Mivel a TCP összeköttetés-alapú, a kommunikáció megkezdése előtt egy szigorú protokoll szerint fel kell építeni a kapcsolatot. Ezt a folyamatot <strong>háromutas kézfogásnak (Three-way handshake)</strong> nevezzük, amelynek lépései:</p>
+<ol>
+<li><strong>SYN (Kliens ➔ Szerver):</strong> A kliens kezdeményezi a kapcsolat kiépítését. Küld egy szegmenst, amelyben a <code>SYN</code> bit be van állítva, és elküldi a saját kezdeti sorszámát.</li>
+<li><strong>SYN/ACK (Szerver ➔ Kliens):</strong> A szerver megkapja a kérést, és egy jóváhagyó válaszüzenetet küld vissza. Ebben egyrészt nyugtázza a kliens kérését (az <code>ACK</code> bit beállításával), másrészt ő is küld egy szinkronizációs kérést (a <code>SYN</code> bit beállításával) a saját kezdeti sorszámával.</li>
+<li><strong>ACK (Kliens ➔ Szerver):</strong> A kliens megkapja a szerver válaszát, és egy utolsó nyugtával (<code>ACK</code> bit) jóváhagyja azt.</li>
+</ol>
+<p><img src="../../kepek/tcp_handshake.gif" alt="kezfogas"></p>
+<p>Ezzel a "kézfogással" a kapcsolat sikeresen felépült, és megkezdődhet a tényleges adatok (rakrészek) biztonságos, nyugtázott átvitele.</p>
+<p><img src="../../kepek/tcp_vs_udp.png" alt="tcp_vs_udp"></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
